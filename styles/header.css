@@ -20,7 +20,6 @@
     width: 642px;
 }
 .middle-section p {
-    font-family: Roboto, Arial;
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
@@ -34,9 +33,8 @@
 }
 .github-icon,
 .linkedin-icon,
-.instagram-icon {
+.instagram-icon,
+.x-icon {
     width: 36px;
 }
-.twitter-icon {
-    width: 66px;
-}
+
