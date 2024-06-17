@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.left-section {
+    margin-left: 70px;
+    
+}
+.jc-logo {
+    height: 60px;
+}
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 642px;
+}
+.middle-section p {
+    font-family: Roboto, Arial;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.right-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 234px;
+    margin-right: 70px;
+}
+.github-icon,
+.linkedin-icon,
+.instagram-icon {
+    width: 36px;
+}
+.twitter-icon {
+    width: 66px;
+}
