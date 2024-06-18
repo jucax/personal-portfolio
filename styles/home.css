@@ -1,26 +1,24 @@
 .home {
     display: flex;
     flex-direction: row;
-    width: 1100px;
-    margin-left: 600px;
+    justify-content: center;
+    align-items: center;
     margin-top: 150px;
+    gap: 300px;
 }
 .text {
-    width: 575px;
-    margin-right: 200px
+    width: 500px;
 }
 .home .title {
     font-size: 70px;
     font-weight: 700;
     color: rgb(255, 255, 255);
 }
-.subtitle {
-    margin-top: 26px;
-}
 .home .subtitle {
     font-size: 24px;
     color: rgb(198, 198, 198);
     line-height: 36px;
+    margin-top: 26px;
 }
 .connect-button {
     font-size: 20px;
@@ -32,8 +30,33 @@
     border-radius: 8px;
     padding: 14px 24px 14px 24px;
     margin-top: 40px;
+    transition: box shadow 0.25s;
+}
+.connect-button:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
 .headshot {
     width: 300px;
-    object-fit:scale-down;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.subtitle {
+    font-size: 20px;
+    color: rgb(198, 198, 198);
+    margin-top: 30px;
 }
