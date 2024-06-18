@@ -10,7 +10,7 @@
     
 }
 .jc-logo {
-    height: 60px;
+    height: 90px;
 }
 .middle-section {
     display: flex;
@@ -38,3 +38,15 @@
     width: 36px;
 }
 
+header p:hover {
+    opacity: 1;
+}
+header p:hover ~ p,
+header p:hover ~ p ~ p,
+header p:hover ~ p ~ p ~ p,
+header p:hover ~ p ~ p ~ p ~ p {
+    opacity: 0.5;
+}
+header p:not(:hover) {
+    opacity: 1;
+}
