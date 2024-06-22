@@ -22,6 +22,9 @@
 .middle-section p {
     font-size: 20px;
     color: rgb(255, 255, 255);
+    padding: 4px 8px 4px 8px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in;
 }
 .right-section {
     display: flex;
@@ -38,15 +41,6 @@
     width: 36px;
 }
 
-header p:hover {
-    opacity: 1;
-}
-header p:hover ~ p,
-header p:hover ~ p ~ p,
-header p:hover ~ p ~ p ~ p,
-header p:hover ~ p ~ p ~ p ~ p {
-    opacity: 0.5;
-}
-header p:not(:hover) {
-    opacity: 0.5;
+.middle-section p:hover {
+    background-color: rgba(198, 198, 198, 0.25);
 }
