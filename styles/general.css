@@ -9,3 +9,10 @@ p {
 button {
     font-family: Roboto, Arial;
 }
+.text-indent {
+    margin-left: 20px;
+    font-weight: bold;
+}
+.text-bold {
+    font-weight: bold;
+}

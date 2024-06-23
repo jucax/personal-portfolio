@@ -31,11 +31,11 @@
     border-radius: 8px;
     padding: 14px 24px 14px 24px;
     margin-top: 40px;
-    transition: box shadow 0.25s;
+    transition: background-color 0.25s;
 }
 .connect-button:hover,
 .view-button:hover {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
 }
 .headshot {
@@ -82,7 +82,7 @@
     padding: 10px;
     width: 380px;
     border-radius: 14px;
-    transition: transform 1s;
+    transition: box-shadow 0.75s ease-in-out;
 }
 .project-picture {
     height: 200px;
@@ -109,6 +109,7 @@
 }
 .arrow-icon {
     width: 25px;
+    transition: transform 0.75s;
 }
 .project-subtitle {
     font-size: 16px;
@@ -119,7 +120,7 @@
     font-size: 12px;
 }
 .project:hover {
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
 .project:hover .arrow-icon {
@@ -133,10 +134,31 @@
     margin-top: 60px;
 }
 .element {
-    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgb(198, 198, 198);;
     width: 365px;
     padding: 26px;
+    transition: box-shadow 0.75s ease-in-out; /* Smooth transition for the glow effect */
 }
+@keyframes shake {
+    0%, 100% { transform: translate(0, 0) rotate(2deg); }
+    10%, 90% { transform: translate(-1px, 0) rotate(-2deg); }
+    20%, 80% { transform: translate(2px, 0) rotate(2deg); }
+    30%, 50%, 70% { transform: translate(-3px, 0) rotate(-2deg); }
+    40%, 60% { transform: translate(3px, 0) rotate(2deg); }
+}
+.element:hover .element-icon {
+    animation: shake 1s ease-in-out; /* Duración de la animación */
+    animation-delay: 1s;
+}
+.element:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+
 .element-title-box {
     display: flex;
     flex-direction: row;
@@ -159,7 +181,7 @@
     align-items: top;
     justify-content: left;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .element-decoration {
     display: flex;
@@ -184,10 +206,78 @@
     color: rgb(255, 255, 255);
     line-height: 30px;
 }
-.text-indent {
-    margin-left: 20px;
-    font-weight: bold;
+
+.skills-languajes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1250px;
+    margin-top: 60px;
 }
-.text-bold {
-    font-weight: bold;
+.skills-box {
+    display: flex;
+    flex-direction: column;
+}
+.languajes-box {
+    display: flex;
+    flex-direction: column;
+}
+.skills-title,
+.languajes-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.skills-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.skills-subtitle {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.programming-skills,
+.pc-mac-skills,
+.video-skills,
+.design-skills {
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: left;
+    gap: 16px;
+}
+.pc-mac-skills {
+    position: relative;
+    left: 50px;
+}
+.video-skills {
+    position: relative;
+    left: 90px;
+}
+.design-skills {
+    position: relative;
+    left: 40px;
+}
+.programming-skills p,
+.video-skills p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 14px 18px 14px 18px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 8px;
+}
+.pc-mac-skills p,
+.design-skills p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 14px 18px 14px 18px;
+    background-color: rgb(72, 72, 72);
+    border-radius: 8px;
 }
