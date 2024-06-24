@@ -21,7 +21,8 @@
     margin-top: 26px;
 }
 .connect-button,
-.view-button {
+.view-button,
+.know-button {
     font-size: 20px;
     color: rgb(255, 255, 255);
     background-color: rgb(46, 42, 42);
@@ -34,7 +35,8 @@
     transition: background-color 0.25s;
 }
 .connect-button:hover,
-.view-button:hover {
+.view-button:hover,
+.know-button:hover {
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
 }
@@ -211,14 +213,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1250px;
+    width: 1200px;
     margin-top: 60px;
 }
 .skills-box {
-    display: flex;
-    flex-direction: column;
-}
-.languajes-box {
     display: flex;
     flex-direction: column;
 }
@@ -237,7 +235,8 @@
     gap: 40px;
     margin-bottom: 40px;
 }
-.skills-subtitle {
+.skills-subtitle,
+.languaje-subtitle {
     font-size: 26px;
     font-weight: 400;
     text-align: center;
@@ -266,7 +265,8 @@
     left: 40px;
 }
 .programming-skills p,
-.video-skills p {
+.video-skills p,
+.languaje {
     font-size: 16px;
     color: rgb(255, 255, 255);
     padding: 14px 18px 14px 18px;
@@ -276,8 +276,19 @@
 .pc-mac-skills p,
 .design-skills p {
     font-size: 16px;
-    color: rgb(255, 255, 255);
+    color: rgb(56, 56, 56);
     padding: 14px 18px 14px 18px;
-    background-color: rgb(72, 72, 72);
+    background-color: rgb(198, 198, 198);
     border-radius: 8px;
+}
+.languajes-box {
+    display: flex;
+    flex-direction: column;
+}
+.languajes-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
