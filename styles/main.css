@@ -53,7 +53,8 @@
 
 .work,
 .about-me,
-.professional-experience {
+.professional-experience,
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +63,8 @@
 }
 .work .text,
 .about-me .text,
-.professional-experience .text {
+.professional-experience .text,
+.contact .text {
     text-align: center;
     line-height: 35px;
     width: 1050px;
@@ -251,7 +253,7 @@
     font-size: 26px;
     font-weight: 400;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(198, 198, 198);
 }
 .programming-skills,
 .pc-mac-skills,
@@ -390,4 +392,46 @@
 }
 .experience-logo {
     width: 170px;
+}
+
+.social-media-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 60px;
+    border-radius: 16px;
+    border: 1px solid rgb(72, 72, 72);
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 240px;
+    padding: 24px 40px 24px 40px;
+    border-right: 1px solid rgb(72, 72, 72);
+    transition: background-color 0.25s;
+}
+.social-media:last-child {
+    border-right: none;
+}
+.social-media-icon {
+    width: 24px;
+}
+.social-media-arrow-icon {
+    width: 16px;
+    transition: transform 0.75s;
+}
+.social-media p {
+    font-size: 26px;
+    font-weight: 400;
+    color: rgb(198, 198, 198);
+}
+.social-media:hover {
+    background-color: rgba(148, 200, 234, 0.1);
+    cursor: pointer;
+}
+.social-media:hover .social-media-arrow-icon {
+    transform: rotate(-45deg);
 }
