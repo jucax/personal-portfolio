@@ -24,31 +24,36 @@
 .view-button,
 .know-button {
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(148, 200, 234);
     background-color: rgb(46, 42, 42);
     border-style: solid;
     border-width: 2px;
-    border-color: rgb(255, 255, 255);
+    border-color: rgb(148, 200, 234);
     border-radius: 8px;
     padding: 14px 24px 14px 24px;
     margin-top: 40px;
     transition: background-color 0.25s;
 }
+.view-button,
+.know-button {
+    font-size: 16px;
+}
 .connect-button:hover,
 .view-button:hover,
 .know-button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(148, 200, 234, 0.1);
     cursor: pointer;
 }
 .headshot {
     width: 300px;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 8px rgba(148, 200, 234, 0.5);
 }
 
 .work,
-.about-me {
+.about-me,
+.professional-experience {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +61,8 @@
     margin-top: 120px;
 }
 .work .text,
-.about-me .text {
+.about-me .text,
+.professional-experience .text {
     text-align: center;
     line-height: 35px;
     width: 1050px;
@@ -122,7 +128,7 @@
     font-size: 12px;
 }
 .project:hover {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(148, 200, 234, 0.5);
     cursor: pointer;
 }
 .project:hover .arrow-icon {
@@ -141,7 +147,7 @@
     align-items: flex-start;
     position: relative;
     overflow: hidden;
-    border: 2px solid rgb(198, 198, 198);;
+    border: 3px solid rgb(198, 198, 198);;
     width: 365px;
     padding: 26px;
     transition: box-shadow 0.75s ease-in-out; /* Smooth transition for the glow effect */
@@ -176,6 +182,10 @@
     font-size: 30px;
     font-weight: 700;
     color: rgb(255, 255, 255);
+    text-decoration-line: underline;
+    text-decoration-color: rgb(148, 200, 234);
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
 }
 .element-content {
     display: flex;
@@ -265,8 +275,7 @@
     left: 40px;
 }
 .programming-skills p,
-.video-skills p,
-.languaje {
+.video-skills p {
     font-size: 16px;
     color: rgb(255, 255, 255);
     padding: 14px 18px 14px 18px;
@@ -274,7 +283,8 @@
     border-radius: 8px;
 }
 .pc-mac-skills p,
-.design-skills p {
+.design-skills p,
+.languaje {
     font-size: 16px;
     color: rgb(56, 56, 56);
     padding: 14px 18px 14px 18px;
@@ -291,4 +301,92 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 1000px;
+    margin-top: 60px;
+}
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.experience-title-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: rgb(198, 198, 198);
+    border-radius: 10px;
+}
+.experience-title-box p {
+    font-size: 20px;
+    color: rgb(56, 56, 56);
+}
+.experience-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: 20px;
+    background-color: rgb(72, 72, 72);
+    border-radius: 10px;
+    gap: 40px;
+}
+.experience-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    line-height: 30px;
+}
+.experience-info-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.experience-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    text-align: justify;
+    gap: 8px;
+}
+.experience-info img {
+    width: 24px;
+}
+.experience-info p {
+    font-size: 20px;
+    color: rgb(198, 198, 198);
+}
+.experience-description {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.experience-skills {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 20px;
+}
+.experience-skills p {
+    font-size: 16px;
+    color: rgb(56, 56, 56);
+    padding: 4px 12px 4px 12px;
+    background-color: rgb(148, 200, 234);
+    border-radius: 8px;
+}
+.experience-logo {
+    width: 170px;
 }
