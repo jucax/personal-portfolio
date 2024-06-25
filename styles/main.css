@@ -22,7 +22,8 @@
 }
 .connect-button,
 .view-button,
-.know-button {
+.know-button,
+.email-button {
     font-size: 20px;
     color: rgb(148, 200, 234);
     background-color: rgb(46, 42, 42);
@@ -35,12 +36,14 @@
     transition: background-color 0.25s;
 }
 .view-button,
-.know-button {
+.know-button,
+.email-button {
     font-size: 16px;
 }
 .connect-button:hover,
 .view-button:hover,
-.know-button:hover {
+.know-button:hover,
+.email-button:hover {
     background-color: rgba(148, 200, 234, 0.1);
     cursor: pointer;
 }
@@ -234,7 +237,8 @@
     flex-direction: column;
 }
 .skills-title,
-.languajes-title {
+.languajes-title,
+.email-title {
     font-size: 30px;
     font-weight: 700;
     color: rgb(255, 255, 255);
@@ -398,9 +402,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 60px;
     border-radius: 16px;
     border: 1px solid rgb(72, 72, 72);
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 .social-media {
     display: flex;
@@ -413,7 +418,7 @@
     border-right: 1px solid rgb(72, 72, 72);
     transition: background-color 0.25s;
 }
-.social-media:last-child {
+.social-media-box:last-child {
     border-right: none;
 }
 .social-media-icon {
@@ -423,8 +428,9 @@
     width: 16px;
     transition: transform 0.75s;
 }
-.social-media p {
-    font-size: 26px;
+.social-media p,
+.text-boxes-subtitle {
+    font-size: 20px;
     font-weight: 400;
     color: rgb(198, 198, 198);
 }
@@ -434,4 +440,38 @@
 }
 .social-media:hover .social-media-arrow-icon {
     transform: rotate(-45deg);
+}
+.text-boxes {
+    display: flex;
+    flex: row;
+    gap: 40px;
+}
+.left-text-boxes,
+.right-text-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 475px;
+}
+.text-box-small,
+.text-box-big {
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: rgb(72, 72, 72);
+    border: 2px solid rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.text-box-big {
+    height: 150px;
+}
+.button-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
 }
