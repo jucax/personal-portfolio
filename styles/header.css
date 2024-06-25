@@ -3,14 +3,25 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 90px;
+    z-index: 100;
+    background-color: rgb(46, 42, 42);
+    border-bottom-style: solid;
+    border-bottom-color: rgb(72, 72, 72);
+    border-bottom-width: 1px;
 }
 .left-section {
     margin-left: 70px;
-    
 }
 .jc-logo {
     height: 90px;
+}
+.jc-logo:hover {
+    cursor: pointer;
 }
 .middle-section {
     display: flex;
@@ -43,4 +54,10 @@
 
 .middle-section p:hover {
     background-color: rgba(148, 200, 234, 0.5);
+    cursor: pointer;
+}
+
+.right-section img:hover {
+    opacity: 0.75;
+    cursor: pointer;
 }
