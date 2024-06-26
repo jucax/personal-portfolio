@@ -1,0 +1,27 @@
+.footer {
+    height: 90px;
+    background-color: rgb(198, 198, 198);
+    margin-top: 200px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-logo {
+    height: 80px;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.footer-menu p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(72, 72, 72);
+}
