@@ -1,4 +1,4 @@
-.home {
+.main-home {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,12 +9,12 @@
 .text {
     width: 500px;
 }
-.home .title {
+.main-home .title {
     font-size: 70px;
     font-weight: 700;
     color: rgb(255, 255, 255);
 }
-.home .subtitle {
+.main-home .subtitle {
     font-size: 24px;
     color: rgb(198, 198, 198);
     line-height: 36px;
@@ -46,6 +46,10 @@
 .email-button:hover {
     background-color: rgba(148, 200, 234, 0.1);
     cursor: pointer;
+}
+.main-home-illustration {
+    width: 450px;
+    object-fit: cover;
 }
 .headshot {
     width: 300px;
