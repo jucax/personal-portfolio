@@ -8,6 +8,9 @@ p {
     font-family: Roboto, Arial;
     margin: 0px
 }
+a {
+    text-decoration: none;
+}
 button {
     font-family: Roboto, Arial;
 }
