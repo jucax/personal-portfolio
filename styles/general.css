@@ -4,7 +4,8 @@ html {
 body {
     background-color: rgb(46, 42, 42);
 }
-p {
+p,
+ul {
     font-family: Roboto, Arial;
     margin: 0px
 }
