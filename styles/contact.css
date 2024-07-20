@@ -1,0 +1,130 @@
+.contact-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+    gap: 300px;
+}
+.text {
+    width: 500px;
+}
+.contact-home .title {
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.contact-home .subtitle {
+    font-size: 24px;
+    color: rgb(198, 198, 198);
+    line-height: 36px;
+    margin-top: 26px;
+}
+
+.contact-home-illustration {
+    width: 450px;
+    object-fit: cover;
+}
+
+.social-media-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 16px;
+    margin-top: 40px;
+    gap: 20px;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 140px;
+    padding: 24px 40px 24px 40px;
+    transition: background-color 0.25s;
+}
+.social-media-icon {
+    width: 24px;
+}
+.social-media-arrow-icon {
+    width: 16px;
+    transition: transform 0.75s;
+}
+.social-media p,
+.text-boxes-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(198, 198, 198);
+}
+.social-media:hover {
+    background-color: rgba(148, 200, 234, 0.1);
+    cursor: pointer;
+}
+.social-media:hover .social-media-arrow-icon {
+    transform: rotate(-45deg);
+}
+
+.contact-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+.email-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.text-boxes {
+    display: flex;
+    flex: row;
+    gap: 40px;
+}
+.left-text-boxes,
+.right-text-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 475px;
+}
+.text-box-small,
+.text-box-big {
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: rgb(72, 72, 72);
+    border: 2px solid rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.text-box-big {
+    height: 150px;
+}
+.button-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+.email-button {
+    font-size: 16px;
+    color: rgb(148, 200, 234);
+    background-color: rgb(46, 42, 42);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(148, 200, 234);
+    border-radius: 8px;
+    padding: 14px 24px 14px 24px;
+    margin-top: 40px;
+    transition: background-color 0.25s;
+}
+.email-button:hover {
+    background-color: rgba(148, 200, 234, 0.1);
+    cursor: pointer;
+}
