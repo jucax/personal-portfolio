@@ -5,8 +5,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 140px;
-    gap: 300px;
+    margin-top: 120px;
+    gap: 260px;
+}
+.facts-home {
+    margin-top: 80px;
 }
 .element {
     gap: 200px;
@@ -54,8 +57,9 @@
     margin-top: 26px;
 }
 .about-home-illustration {
-    height: 450px;
+    height: 400px;
     object-fit: cover;
+    border-radius: 6px;
 }
 .facts-home-illustration {
     height: 300px;
