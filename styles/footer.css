@@ -6,7 +6,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    display: none;
 }
 .footer-logo {
     height: 80px;
@@ -27,6 +26,7 @@
     padding: 4px 8px 4px 8px;
     border-radius: 6px;
     transition: background-color 0.3s ease-in;
+    text-wrap: nowrap;
 }
 .footer-menu p:hover {
     background-color: rgba(255, 255, 255, 0.5);
@@ -37,13 +37,19 @@
     height: 90px;
     background-color: rgb(198, 198, 198);
     margin-top: 200px;
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
 @media (max-width: 820px) {
+    .footer {
+        display: none;
+    }
+    .responsive-footer {
+        display: flex;
+    }
     .footer-logo {
         height: 60px;
     }
