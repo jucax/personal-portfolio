@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     </head>
     <body>
         <header class="header">
@@ -29,6 +31,22 @@
                 <a href="https://x.com/jcarlos_mar" target="_blank"><img class="x-icon" src="icons/x-icon.png"></a>
             </div>
         </header>
+       
+        <header class="responsive-header">
+            <div class="left-section">
+                <a href="#top"><img class="jc-logo" src="images/jc-logo-vertical.png"></a>
+            </div>
+            <div class="menu-section" onclick="toggleMenu()">
+                <img class="menu-icon" src="icons/menu-icon.png" alt="Menu Icon">
+            </div>
+        </header>
+        <nav class="mobile-nav">
+            <a href="#top"><p>//  Home</p></a>
+            <a href="work.html"><p>//  Work</p></a>
+            <a href="about.html"><p>//  About me</p></a>
+            <a href="experience.html"><p>//  Experience</p></a>
+            <a href="contact.html"><p>//  Contact</p></a>
+        </nav>
 
         <section class="main-home">
             <div class="text">
@@ -348,5 +366,19 @@
                 <a href="contact.html"><p>Contact</p></a>
             </div>
         </footer>
+
+        <footer class="responsive-footer">
+            <div class="footer-menu">
+                <p>© Copyright 2024 . Made by</p>
+                <a href="#top"><img class="footer-logo" src="images/JC logo horizontal-2.png"></a>
+            </div>
+        </footer>
     </body>
+
+    <script>
+        function toggleMenu() {
+            const mobileNav = document.querySelector('.mobile-nav');
+            mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+        }
+        </script>
 </html>
