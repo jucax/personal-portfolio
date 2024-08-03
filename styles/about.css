@@ -1,3 +1,4 @@
+/* About home section */
 .about-home,
 .facts-home,
 .element {
@@ -8,52 +9,18 @@
     margin-top: 120px;
     gap: 260px;
 }
-.facts-home {
-    margin-top: 80px;
-}
-.element {
-    gap: 200px;
-    margin: 30px 0px 80px 0px;
-}
-.facts-home {
-    gap: 200px;
-    padding: 20px 0px 30px 0px;
-    background-color: rgb(72, 72, 72);
-}
 .about-home .text,
 .element .text,
 .facts-home .text{
     width: 500px;
 }
-.about-home .title {
-    font-size: 70px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-}
-.title {
-    font-size: 40px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    margin-top: 26px;
-}
 .about-home .subtitle {
-    font-size: 24px;
-    color: rgb(198, 198, 198);
-    line-height: 36px;
     margin-top: 26px;
-}
-.subtitle {
-    font-size: 20px;
-    color: rgb(198, 198, 198);
-    line-height: 36px;
-    margin-top: 30px;
 }
 .about-home .content,
 .facts-home .content,
-.element .content {
-    font-size: 20px;
+.element .conten {
     color: rgb(255, 255, 255);
-    line-height: 36px;
     margin-top: 26px;
 }
 .about-home-illustration {
@@ -61,12 +28,31 @@
     object-fit: cover;
     border-radius: 6px;
 }
+
+/* Facts home section */
+.facts-home {
+    gap: 200px;
+    padding: 20px 0px 30px 0px;
+    background-color: rgb(72, 72, 72);
+    margin-top: 80px;
+}
+.title {
+    margin-top: 26px;
+}
+.subtitle {
+    margin-top: 26px;
+}
 .facts-home-illustration {
     height: 300px;
     object-fit: cover;
     border-radius: 6px;
 }
 
+/* All elements section */
+.element {
+    gap: 200px;
+    margin: 30px 0px 80px 0px;
+}
 .elements {
     display: flex;
     flex-direction: column;
@@ -85,7 +71,6 @@
     width: 64px;
 }
 .element-header-title {
-    font-size: 30px;
     font-weight: 700;
     color: rgb(148, 200, 234);
 }

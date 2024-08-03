@@ -1,3 +1,4 @@
+/* Work home section */
 .work-home {
     display: flex;
     flex-direction: row;
@@ -9,28 +10,19 @@
 .text {
     width: 500px;
 }
-.work-home .title {
-    font-size: 70px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-}
 .work-home .subtitle,
 .work-home .content {
-    font-size: 24px;
-    color: rgb(198, 198, 198);
-    line-height: 36px;
     margin-top: 26px;
 }
 .work-home .content {
-    font-size: 20px;
     color: rgb(255, 255, 255);
 }
-
 .work-home-illustration {
     width: 450px;
     object-fit: cover;
 }
 
+/* All work section */
 .all-work{
     display: flex;
     flex-direction: column;
@@ -68,7 +60,6 @@
     padding: 10px;
     margin-top: 10px;
     border-radius: 8px;
-    color: rgb(255, 255, 255);
 }
 .project-title-box {
     display: flex;
@@ -78,20 +69,15 @@
     margin-bottom: 16px;
 }
 .project-title {
-    font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 .arrow-icon {
     width: 25px;
     transition: transform 0.75s;
 }
 .project-subtitle {
-    font-size: 16px;
-    font-weight: 700;
     margin-bottom: 30px;
-}
-.project-details {
-    font-size: 12px;
 }
 .project:hover {
     box-shadow: 0 0 15px rgba(148, 200, 234, 0.5);

@@ -17,14 +17,14 @@
     <body>
         <header class="header">
             <div class="left-section">
-                <a href="index.html#top"><img class="jc-logo" src="images/jc-logo-horizontal-1.png"></a>
+                <a href="index.html"><img class="jc-logo" src="images/jc-logo-horizontal-1.png"></a>
             </div>
             <div class="middle-section">
-                <a href="index.html"><p>//  Home</p></a>
-                <a href="work.html"><p>//  Work</p></a>
-                <a href="#top"><p>//  About me</p></a>
-                <a href="experience.html"><p>//  Experience</p></a>
-                <a href="contact.html"><p>//  Contact</p></a>
+                <a href="index.html"><h4><p>//  Home</p></h4></a>
+                <a href="work.html"><h4><p>//  Work</p></h4></a>
+                <a href="#top"><h4><p>//  About me</p></h4></a>
+                <a href="experience.html"><h4><p>//  Experience</p></h4></a>
+                <a href="contact.html"><h4><p>//  Contact</p></h4></a>
             </div>
             <div class="right-section">
                 <a href="https://github.com/jucax" target="_blank"><img class="github-icon" src="icons/github-icon.png"></a>
@@ -33,26 +33,48 @@
                 <a href="https://x.com/jcarlos_mar" target="_blank"><img class="x-icon" src="icons/x-icon.png"></a>
             </div>
         </header>
+       
+        <header class="responsive-header">
+            <div class="left-section">
+                <a href="#top"><img class="jc-logo" src="images/jc-logo-horizontal-1.png"></a>
+            </div>
+            <div class="menu-section" onclick="toggleMenu()">
+                <img class="menu-icon" src="icons/menu-icon.png" alt="Menu Icon">
+            </div>
+        </header>
+        <nav class="mobile-nav">
+            <a href="#top"><h4><p>//  Home</p></h4></a>
+            <a href="work.html"><h4><p>//  Work</p></h4></a>
+            <a href="about.html"><h4><p>//  About me</p></h4></a>
+            <a href="experience.html"><h4><p>//  Experience</p></h4></a>
+            <a href="contact.html"><h4><p>//  Contact</p></h4></a>
+            <div class="nav-button-section">
+                <a href="https://github.com/jucax" target="_blank"><img class="github-icon" src="icons/github-icon.png"></a>
+                <a href="https://www.linkedin.com/in/jcarlos-martinez/" target="_blank"><img class="linkedin-icon" src="icons/linkedln-icon.png"></a>
+                <a href="https://www.instagram.com/jcarlos.mar/" target="_blank"><img class="instagram-icon" src="icons/instagram-icon.png"></a>
+                <a href="https://x.com/jcarlos_mar" target="_blank"><img class="x-icon" src="icons/x-icon.png"></a>
+            </div>
+        </nav>
 
         <section class="about-home">
             <img class="about-home-illustration" src="images/headshot.jpg">
             <div class="text">
-                <p class="title">About me.</p>
-                <p class="subtitle">Explore some of my latest projects, showcasing my journey in web development.</p>
-                <p class="content">I'm in the process of venturing into more complex personal projects that implement more advanced technologies. <br>
-                These projects reflect my passion for continuous learning and my drive to become a Full Stack developer.</p>
+                <h1>About me.</h1>
+                <h3 class="subtitle">Explore some of my latest projects, showcasing my journey in web development.</h3>
+                <h4 class="content">I'm in the process of venturing into more complex personal projects that implement more advanced technologies. <br>
+                These projects reflect my passion for continuous learning and my drive to become a Full Stack developer.</h4>
             </div>
         </section>
         <section class="facts-home">
             <div class="text">
-                <p class="title">Some Quick Facts.</p>
-                <p class="content">
+                <h2 class="title">Some Quick Facts.</h2>
+                <h4 class="content">
                     🎓 I have had full ride scholarships for middle school, high school and college.<br>
                     🏊 I like to swim since I was 10 years old.<br>
                     🛩️ I love to trave land getting to know new cultures.<br>
                     👾 One of my hobbies is 3D designing and printing.<br>
                     🤖 I was national champion with my high school robotics team Aztech.<br>
-                    🖥️ I founded Pero no me hackean? a social project dedicated to fostering technological literacy.</p>
+                    🖥️ I founded Pero no me hackean? a social project dedicated to fostering technological literacy.</h4>
             </div>
             <img class="facts-home-illustration" src="images/me-1.jpg">
         </section>
@@ -60,19 +82,19 @@
         <section class="elements">
             <div class="element-header" id="education-element">
                 <img class="element-header-icon" src="icons/education-icon-blue.png">
-                <p class="element-header-title">Education</p>
+                <h3 class="element-header-title">Education</h3>
                 <div class="element-header-decoration"></div>
             </div>
             <div class="element">
                 <img class="about-rectangle-picture" src="images/about-1-1.png">
                 <div class="text">
-                    <p class="subtitle">Bachelor of Arts in 
-                        Computer Science & Economics.</p>
-                    <p class="title">Southwestern University.</p>
-                    <p class="subtitle">Class 2027.</p>
+                    <h4 class="subtitle">Bachelor of Arts in 
+                        Computer Science & Economics.</h4>
+                    <h2 class="title">Southwestern University.</h2>
+                    <h4 class="subtitle">Class 2027.</h4>
                     <ul class="content">
-                        <li>Enrolled in 51 credits for Fall 2024, with a cumulative GPA of 4.0.</li><br>
-                        <li>Plantel Azteca Scholarship (Full academic scholarship covering tuition) & Fundación Azteca Maintenance Scholarship (housing, food, transport)</li><br>
+                        <li><h4>Enrolled in 51 credits for Fall 2024, with a cumulative GPA of 4.0.</h4></li><br>
+                        <li><h4>Plantel Azteca Scholarship (Full academic scholarship covering tuition) & Fundación Azteca Maintenance Scholarship (housing, food, transport)</li><br>
                         <li>Member Organizations:
                             <ul>
                                 <li>Computer Science Club</li>

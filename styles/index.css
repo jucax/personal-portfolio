@@ -1,3 +1,4 @@
+/* Main home section */
 .main-home {
     display: flex;
     flex-direction: row;
@@ -5,7 +6,7 @@
     align-items: center;
     margin-top: 90px;
     gap: 280px;
-    /* background-image: url('../images/background-1.png'); */
+    background-image: url('../images/background-1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,6 +55,7 @@
     margin-right: 20px;
 }
 
+/* Other sections */
 .work,
 .about-me,
 .professional-experience,
@@ -76,6 +78,8 @@
 .subtitle {
     margin-top: 30px;
 }
+
+/* Projects section */
 .recent-projects {
     display: flex;
     flex-direction: row;
@@ -101,7 +105,6 @@
     padding: 10px;
     margin-top: 10px;
     border-radius: 8px;
-    color: rgb(255, 255, 255);
 }
 .project-title-box {
     display: flex;
@@ -129,6 +132,7 @@
     transform: rotate(-45deg);
 }
 
+/* Elements section */
 .elements {
     display: flex;
     flex-direction: row;
@@ -162,7 +166,6 @@
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Glow effect */
     cursor: pointer;
 }
-
 .element-title-box {
     display: flex;
     flex-direction: row;
@@ -208,6 +211,7 @@
     margin-bottom: 10px;
 }
 
+/* Skills section */
 .skills-languajes {
     display: flex;
     flex-direction: row;
@@ -286,6 +290,7 @@
     gap: 50px;
 }
 
+/* Experiences section */
 .experiences {
     display: flex;
     flex-direction: column;
@@ -293,7 +298,7 @@
     gap: 20px;
     max-width: 1000px;
     margin-top: 60px;
-    padding: 0 20px; /* Add some padding for small screens */
+    padding: 0 20px; 
 }
 .experience {
     display: flex;
@@ -370,6 +375,7 @@
     width: 170px;
 }
 
+/* Social media section */
 .social-media-box {
     display: flex;
     flex-direction: row;
@@ -411,6 +417,8 @@
 .social-media:hover .social-media-arrow-icon {
     transform: rotate(-45deg);
 }
+
+/* Email section */
 .email-title {
     text-align: center;
     margin-bottom: 40px;
