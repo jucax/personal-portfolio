@@ -4,10 +4,42 @@ html {
 body {
     background-color: rgb(46, 42, 42);
 }
+h1, h2, h3, h4, h5, h6,
 p,
 ul {
     font-family: Roboto, Arial;
     margin: 0px
+}
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+h3 {
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgb(198, 198, 198);
+}
+h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(198, 198, 198);
+}
+h5 {
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+}
+h6 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
 }
 a {
     text-decoration: none;

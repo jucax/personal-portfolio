@@ -9,20 +9,22 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+        <link rel="icon" type="image/x-icon" href="icons/JC-icon.ico">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
+
     <body>
         <header class="header">
             <div class="left-section">
                 <a href="#top"><img class="jc-logo" src="images/jc-logo-horizontal-1.png"></a>
             </div>
             <div class="middle-section">
-                <a href="#top"><p>//  Home</p></a>
-                <a href="work.html"><p>//  Work</p></a>
-                <a href="about.html"><p>//  About me</p></a>
-                <a href="experience.html"><p>//  Experience</p></a>
-                <a href="contact.html"><p>//  Contact</p></a>
+                <a href="#top"><h4><p>//  Home</p></h4></a>
+                <a href="work.html"><h4><p>//  Work</p></h4></a>
+                <a href="about.html"><h4><p>//  About me</p></h4></a>
+                <a href="experience.html"><h4><p>//  Experience</p></h4></a>
+                <a href="contact.html"><h4><p>//  Contact</p></h4></a>
             </div>
             <div class="right-section">
                 <a href="https://github.com/jucax" target="_blank"><img class="github-icon" src="icons/github-icon.png"></a>
@@ -34,18 +36,18 @@
        
         <header class="responsive-header">
             <div class="left-section">
-                <a href="#top"><img class="jc-logo" src="images/jc-logo-vertical.png"></a>
+                <a href="#top"><img class="jc-logo" src="images/jc-logo-horizontal-1.png"></a>
             </div>
             <div class="menu-section" onclick="toggleMenu()">
                 <img class="menu-icon" src="icons/menu-icon.png" alt="Menu Icon">
             </div>
         </header>
         <nav class="mobile-nav">
-            <a href="#top"><p>//  Home</p></a>
-            <a href="work.html"><p>//  Work</p></a>
-            <a href="about.html"><p>//  About me</p></a>
-            <a href="experience.html"><p>//  Experience</p></a>
-            <a href="contact.html"><p>//  Contact</p></a>
+            <a href="#top"><h4><p>//  Home</p></h4></a>
+            <a href="work.html"><h4><p>//  Work</p></h4></a>
+            <a href="about.html"><h4><p>//  About me</p></h4></a>
+            <a href="experience.html"><h4><p>//  Experience</p></h4></a>
+            <a href="contact.html"><h4><p>//  Contact</p></h4></a>
             <div class="nav-button-section">
                 <a href="https://github.com/jucax" target="_blank"><img class="github-icon" src="icons/github-icon.png"></a>
                 <a href="https://www.linkedin.com/in/jcarlos-martinez/" target="_blank"><img class="linkedin-icon" src="icons/linkedln-icon.png"></a>
@@ -56,11 +58,11 @@
 
         <section class="main-home">
             <div class="text">
-                <p class="title">Software developer in progress.</p>
+                <h1>Software developer in progress.</h1>
                 <div class="subtitle">
-                    <p>Computer Science & Economics Student</p>
-                    <p>3D Design and Robotics Enthusiast</p>
-                    <p>Self-taught Web Developer</p>
+                    <h3>Computer Science & Economics Student</h3>
+                    <h3>3D Design and Robotics Enthusiast</h3>
+                    <h3>Self-taught Web Developer</h3>
                 </div>
                 <a href="contact.html"><button class="connect-button">I'd love to connect with you!</button></a>
             </div>
@@ -69,19 +71,19 @@
 
         <section class="work">
             <div class="text">
-                <p class="title">Some of my latest work</p>
-                <p class="subtitle">Here you can see some of my personal projects.</p>
+                <h2>Some of my latest work</h2>
+                <h4 class="subtitle">Here you can see some of my personal projects.</h4>
             </div>
             <div class="recent-projects">
                 <a href="project-1.html"><div class="project">
                     <img class="project-picture" src="images/project-1.png">
                     <div class="project-description">
                         <div class="project-title-box">
-                            <p class="project-title">Corre En El Tiempo</p>
+                            <h4 class="project-title">Corre En El Tiempo</h4>
                             <img class="arrow-icon" src="icons/arrow-icon.png">
                         </div>
-                        <p class="project-subtitle">Videogame</p>
-                        <p class="project-details">Designed by: Juan Carlos Martinez - Date: Dec 10, 2020</p>
+                        <h5 class="project-subtitle">Videogame</h5>
+                        <h6>Designed by: Juan Carlos Martinez - Date: Dec 10, 2020</h6>
                     </div>
                 </div></a>
 
@@ -89,11 +91,11 @@
                     <img class="project-picture" src="images/project-2.png">
                     <div class="project-description">
                         <div class="project-title-box">
-                            <p class="project-title">Pero NoMeHackean?</p>
+                            <h4 class="project-title">Pero NoMeHackean?</h4>
                             <img class="arrow-icon" src="icons/arrow-icon.png">
                         </div>
-                        <p class="project-subtitle">Personal Website </p>
-                        <p class="project-details">Designed by: Juan Carlos Martinez  - Date: May 31, 2024</p>
+                        <h5 class="project-subtitle">Personal Website </h5>
+                        <h6 class="project-details">Designed by: Juan Carlos Martinez  - Date: May 31, 2024</h6>
                     </div>
                 </div></a>
 
@@ -101,11 +103,11 @@
                     <img class="project-picture" src="images/project-3.png">
                     <div class="project-description">
                         <div class="project-title-box">
-                            <p class="project-title">Portfolio</p>
+                            <h4 class="project-title">Portfolio</h4>
                             <img class="arrow-icon" src="icons/arrow-icon.png">
                         </div>
-                        <p class="project-subtitle">Personal Website</p>
-                        <p class="project-details">Designed by: Juan Carlos Martinez  - Date: Jun 18, 2024</p>
+                        <h5 class="project-subtitle">Personal Website</h5>
+                        <h6 class="project-details">Designed by: Juan Carlos Martinez  - Date: Jun 18, 2024</h6>
                     </div>
                 </div></a>
             </div>
@@ -114,15 +116,14 @@
 
         <section class="about-me">
             <div class="text">
-                <p class="title">About me</p>
-                <p class="subtitle">I'm Juan Carlos Martinez, hailing from Mexico City 🇲🇽, currently pursuing a dual degree in Computer Science and Economics at Southwestern University in Georgetown, TX 🇺🇸. My passion lies in becoming a Full Stack developer, hence I enjoy working on personal projects to enhance my skills.</p>
+                <h2>About me</h2>
+                <h4 class="subtitle">I'm Juan Carlos Martinez, hailing from Mexico City 🇲🇽, currently pursuing a dual degree in Computer Science and Economics at Southwestern University in Georgetown, TX 🇺🇸. My passion lies in becoming a Full Stack developer, hence I enjoy working on personal projects to enhance my skills.</h4>
             </div>
             <div class="elements">
                 <a href="about.html#education-element"><div class="element">
                     <div class="element-title-box">
                         <img class="element-icon" src="icons/education-icon.png">
-                        <p class="element-title">Education</p>
-                        <div class="element-underline"></div>
+                        <h3 class="element-title">Education</h3>
                     </div>
                     <div class="element-content">
                         <div class="element-decoration">
@@ -130,16 +131,16 @@
                             <div class="element-decoration-line"></div>
                             <p class="element-decoration-text">&lt;/h3&gt;</p>
                         </div>
-                        <p class="element-description"><span class="text-indent">Southwestern University<br></span>
+                        <h5><span class="text-indent">Southwestern University<br></span>
                         Currently pursuing a Bachelor of Arts in <span class="text-bold">Computer Science</span> and <span class="text-bold">Economics</span> at Southwestern University, where I maintain a cumulative GPA of 4.0.<br> 
-                        <br>My academic journey is fully supported by a full-ride scholarship.</p>
+                        <br>My academic journey is fully supported by a full-ride scholarship.</h5>
                     </div>
                 </div></a>
 
                 <a href="about.html#leadership-element"><div class="element">
                     <div class="element-title-box">
                         <img class="element-icon" src="icons/leadership-icon.png">
-                        <p class="element-title">Leadership</p>
+                        <h3 class="element-title">Leadership</h3>
                     </div>
                     <div class="element-content">
                         <div class="element-decoration">
@@ -147,18 +148,18 @@
                             <div class="element-decoration-line"></div>
                             <p class="element-decoration-text">&lt;/h3&gt;</p>
                         </div>
-                        <p class="element-description"><span class="text-indent">Pero ¿no me hackean?<br></span>
+                        <h5><span class="text-indent">Pero ¿no me hackean?<br></span>
                         I founded a social project dedicated to enhancing technological literacy. I provide free courses to over <span class="text-bold">300 educators</span> and reaching over <span class="text-bold">500,000 people</span> through social media.<br> 
                         <br><span class="text-indent">Aztech Robotics<br></span>
                         As captain of the <span class="text-bold">3D Design</span> area of my high school robotics team, I collaborated in designing, building and programming robots for our annual competitions.
-                        </p>
+                        </h5>
                     </div>
                 </div></a>
 
                 <a href="about.html#volunteerism-element"><div class="element">
                     <div class="element-title-box">
                         <img class="element-icon" src="icons/volunteerism-icon.png">
-                        <p class="element-title">Volunteerism</p>
+                        <h3 class="element-title">Volunteerism</h3>
                     </div>
                     <div class="element-content">
                         <div class="element-decoration">
@@ -166,63 +167,63 @@
                             <div class="element-decoration-line"></div>
                             <p class="element-decoration-text">&lt;/h3&gt;</p>
                         </div>
-                        <p class="element-description"><span class="text-indent"> Italika Summer Camp<br></span>
+                        <h5><span class="text-indent"> Italika Summer Camp<br></span>
                             I conducted a Robotics summer course at Italika's motorcycle assembly facilities, leading a group of <span class="text-bold">30 children</span> aged five to twelve.<br> 
-                        <br>Over two weeks, I implemented interactive teaching strategies, guiding participants through activities that culminated in the creation of a functional robot.</p>
+                        <br>Over two weeks, I implemented interactive teaching strategies, guiding participants through activities that culminated in the creation of a functional robot.</h5>
                     </div>
                 </div></a>
             </div>
 
             <div class="skills-languajes">
                 <div class="skills-box">
-                    <p class="skills-title">Skills</p>
+                    <h2 class="skills-title">Skills</h2>
                     <div class="skills-row">
-                        <p class="skills-subtitle">Programming</p>
+                        <h3 class="skills-subtitle">Programming</h3>
                         <div class="programming-skills">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>JavaScript</p>
-                            <p>Java</p>
-                            <p>C++</p>
-                            <p>C#</p>
-                            <p>SQL</p>
+                            <h6>HTML</h6>
+                            <h6>CSS</h6>
+                            <h6>JavaScript</h6>
+                            <h6>Java</h6>
+                            <h6>C++</h6>
+                            <h6>C#</h6>
+                            <h6>SQL</h6>
                         </div>    
                     </div>
                     <div class="skills-row">
-                        <p class="skills-subtitle">PC / Mac</p>
+                        <h3 class="skills-subtitle">PC / Mac</h3>
                         <div class="pc-mac-skills">
-                            <p>iWork</p>
-                            <p>MS Office</p>
-                            <p>Google Suite</p>
-                            <p>Adobe Suite</p>
+                            <h6>iWork</h6>
+                            <h6>MS Office</h6>
+                            <h6>Google Suite</h6>
+                            <h6>Adobe Suite</h6>
                         </div>    
                     </div>
                     <div class="skills-row">
-                        <p class="skills-subtitle">Video</p>
+                        <h3 class="skills-subtitle">Video</h3>
                         <div class="video-skills">
-                            <p>Final Cut</p>
-                            <p>Adobe Premiere</p>
-                            <p>iMovie</p>
-                            <p>OBS</p>
+                            <h6>Final Cut</h6>
+                            <h6>Adobe Premiere</h6>
+                            <h6>iMovie</h6>
+                            <h6>OBS</h6>
                         </div>    
                     </div>
                     <div class="skills-row">
-                        <p class="skills-subtitle">3D Design</p>
+                        <h3 class="skills-subtitle">3D Design</h3>
                         <div class="design-skills">
-                            <p>SolidWorks</p>
-                            <p>Inventor</p>
-                            <p>Blender</p>
-                            <p>Ultimaker Cura</p>
-                            <p>Creality Slicer</p>
+                            <h6>SolidWorks</h6>
+                            <h6>Inventor</h6>
+                            <h6>Blender</h6>
+                            <h6>Ultimaker Cura</h6>
+                            <h6>Creality Slicer</h6>
                         </div>    
                     </div>
                 </div>
                 <div class="languajes-box">
-                    <p class="languajes-title">Languajes</p>
+                    <h2 class="languajes-title">Languajes</h2>
                     <div class="languajes-content">
-                        <p class="languaje-subtitle">Spanish</p>
+                        <h3 class="languaje-subtitle">Spanish</h3>
                         <p class="languaje">Native proficiency</p>
-                        <p class="languaje-subtitle">English</p>
+                        <h3 class="languaje-subtitle">English</h3>
                         <p class="languaje">Advanced proficiency</p>
                     </div>
                 </div>
@@ -232,38 +233,38 @@
 
         <section class="professional-experience">
             <div class="text">
-                <p class="title">Professional Experience</p>
-                <p class="subtitle">This is the professional experience I have acquired during this time.<br> I'm always looking for new challenges and experiences that help me grow!</p>
+                <h2>Professional Experience</h2>
+                <h4 class="subtitle">This is the professional experience I have acquired during this time.<br> I'm always looking for new challenges and experiences that help me grow!</h4>
             </div>
             <div class="experiences">
                 <div class="experience">
                     <div class="experience-title-box">
-                        <p>Fine Arts Technical Assistant - Southwestern University</p>
-                        <p>February 2024 - Present</p>
+                        <h4>Fine Arts Technical Assistant - Southwestern University</h4>
+                        <h4>February 2024 - Present</h4>
                     </div>
                     <div class="experience-content">
                         <div class="experience-text">
                             <div class="experience-info-box">
                                 <div class="experience-info">
                                     <img src="icons/location-icon.png">
-                                    <p>Texas, USA</p>
+                                    <h4>Texas, USA</h4>
                                 </div>
                                 <div class="experience-info">
                                     <img src="icons/website-icon.png">
-                                    <p>southwestern.edu</p>
+                                    <h4>southwestern.edu</h4>
                                 </div>
                                 <div class="experience-info">
                                     <img src="icons/type-icon.png">
-                                    <p>Part Time Job</p>
+                                    <h4>Part Time Job</h4>
                                 </div>
                             </div>
-                            <p class="experience-description">I manage live streaming and recording equipment, supervise lighting, sound, and video systems, and collaborate with production teams to ensure smooth theater performances and events.</p>
+                            <h4 class="experience-description">I manage live streaming and recording equipment, supervise lighting, sound, and video systems, and collaborate with production teams to ensure smooth theater performances and events.</h4>
                             <div class="experience-skills">
-                                <p>OBS</p>
-                                <p>Audio/Visual Setup</p>
-                                <p>Troubleshooting</p>
-                                <p>Team Collaboration</p>
-                                <p>Communication</p>
+                                <h6>OBS</h6>
+                                <h6>Audio/Visual Setup</h6>
+                                <h6>Troubleshooting</h6>
+                                <h6>Team Collaboration</h6>
+                                <h6>Communication</h6>
                             </div>
                         </div>
                         <img class="experience-logo" src="images/experience-1.png">
@@ -272,32 +273,32 @@
 
                 <div class="experience">
                     <div class="experience-title-box">
-                        <p>Financial Products Assistant - Banco Azteca</p>
-                        <p>July 2022 – June 2022</p>
+                        <h4>Financial Products Assistant - Banco Azteca</h4>
+                        <h4>July 2022 - June 2022</h4>
                     </div>
                     <div class="experience-content">
                         <div class="experience-text">
                             <div class="experience-info-box">
                                 <div class="experience-info">
                                     <img src="icons/location-icon.png">
-                                    <p>Mexico City, Mexico</p>
+                                    <h4>Mexico City, Mexico</h4>
                                 </div>
                                 <div class="experience-info">
                                     <img src="icons/website-icon.png">
-                                    <p>bancoazteca.com</p>
+                                    <h4>bancoazteca.com</h4>
                                 </div>
                                 <div class="experience-info">
                                     <img src="icons/type-icon.png">
-                                    <p>Internship</p>
+                                    <h4>Internship</h4>
                                 </div>
                             </div>
-                            <p class="experience-description">I contributed to proposals for new financial products, assisted in renewing the bank's mobile application, and generated data reports, gaining insights into the bank's operations and macroeconomic impact.</p>
+                            <h4 class="experience-description">I contributed to proposals for new financial products, assisted in renewing the bank's mobile application, and generated data reports, gaining insights into the bank's operations and macroeconomic impact.</h4>
                             <div class="experience-skills">
-                                <p>HTML</p>
-                                <p>JavaScript</p>
-                                <p>Data Analysis</p>
-                                <p>Database Management</p>
-                                <p>Critical Thinking</p>
+                                <h6>HTML</h6>
+                                <h6>JavaScript</h6>
+                                <h6>Data Analysis</h6>
+                                <h6>Database Management</h6>
+                                <h6>Critical Thinking</h6>
                             </div>
                         </div>
                         <img class="experience-logo" src="images/experience-2.png">
@@ -308,49 +309,49 @@
 
         <section class="contact">
             <div class="text">
-                <p class="title">Contact me</p>
-                <p class="subtitle">Get in touch with me via social media or email.</p>
+                <h2>Contact me</h2>
+                <h4 class="subtitle">Get in touch with me via social media or email.</h4>
             </div>
             <div class="social-media-box">
                 <a href="https://github.com/jucax" target="_blank">
                     <div class="social-media">
                         <img class="social-media-icon" src="icons/github-icon.png">
-                        <p>GitHub</p>
+                        <h4>GitHub</h4>
                         <img class="social-media-arrow-icon" src="icons/arrow-icon-2.png">
                     </div>
                 </a>
                 <a href="https://www.linkedin.com/in/jcarlos-martinez/" target="_blank">
                     <div class="social-media">
                         <img class="social-media-icon" src="icons/linkedln-icon.png">
-                        <p>Linkedin</p>
+                        <h4>Linkedin</h4>
                         <img class="social-media-arrow-icon" src="icons/arrow-icon-2.png">
                     </div>
                 </a>
                 <a href="https://www.instagram.com/jcarlos.mar/" target="_blank">
                     <div class="social-media">
                         <img class="social-media-icon" src="icons/instagram-icon.png">
-                        <p>Instagram</p>
+                        <h4>Instagram</h4>
                         <img class="social-media-arrow-icon" src="icons/arrow-icon-2.png">
                     </div>
                 </a>
                 <a href="https://x.com/jcarlos_mar" target="_blank">
                     <div class="social-media">
                         <img class="social-media-icon" src="icons/x-icon.png">
-                        <p>Twitter</p>
+                        <h4>Twitter</h4>
                         <img  class="social-media-arrow-icon"src="icons/arrow-icon-2.png">
                     </div>
                 </a>
             </div>
-            <p class="email-title">Send me an email</p>
+            <h2 class="email-title">Send me an email</h2>
             <div class="text-boxes">
                 <div class="left-text-boxes">
-                    <p class="text-boxes-subtitle">Name</p>
+                    <h4 class="text-boxes-subtitle">Name</h4>
                     <input class="text-box-small" type="text"></input>
-                    <p class="text-boxes-subtitle">Email</p>
+                    <h4 class="text-boxes-subtitle">Email</h4>
                     <input class="text-box-small" type="text"></input>
                 </div>
                 <div class="right-text-boxes">
-                    <p class="text-boxes-subtitle">Message</p>
+                    <h4 class="text-boxes-subtitle">Message</h4>
                     <input class="text-box-big" type="text"></input>
                     <div class="button-box">
                         <button class="email-button">Send email</button>
@@ -361,15 +362,15 @@
 
         <footer class="footer">
             <div class="footer-menu">
-                <p>© Copyright 2024 . Made by</p>
+                <h5>© Copyright 2024 . Made by</h5>
                 <a href="#top"><img class="footer-logo" src="images/JC logo horizontal-2.png"></a>
             </div>
             <div class="footer-menu">
-                <a href="#top"><p>Home</p></a>
-                <a href="work.html"><p>Work</p></a>
-                <a href="about.html"><p>About me</p></a>
-                <a href="experience.html"><p>Experience</p></a>
-                <a href="contact.html"><p>Contact</p></a>
+                <a href="#top"><h5>Home</h5></a>
+                <a href="work.html"><h5>Work</h5></a>
+                <a href="about.html"><h5>About me</h5></a>
+                <a href="experience.html"><h5>Experience</h5></a>
+                <a href="contact.html"><h5>Contact</h5></a>
             </div>
         </footer>
 

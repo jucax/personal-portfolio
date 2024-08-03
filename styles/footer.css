@@ -19,9 +19,7 @@
     margin-right: 50px;
     margin-left: 50px;
 }
-.footer-menu p {
-    font-size: 16px;
-    font-weight: 400;
+.footer-menu h5 {
     color: rgb(72, 72, 72);
     padding: 4px 8px 4px 8px;
     border-radius: 6px;
