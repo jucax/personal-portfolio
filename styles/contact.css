@@ -1,3 +1,4 @@
+/* Contact home section */
 .contact-home {
     display: flex;
     flex-direction: row;
@@ -9,23 +10,15 @@
 .text {
     width: 500px;
 }
-.contact-home .title {
-    font-size: 70px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-}
 .contact-home .subtitle {
-    font-size: 24px;
-    color: rgb(198, 198, 198);
-    line-height: 36px;
     margin-top: 26px;
 }
-
 .contact-home-illustration {
     width: 450px;
     object-fit: cover;
 }
 
+/* Social media section */
 .social-media-box {
     display: flex;
     flex-direction: row;
@@ -52,11 +45,9 @@
     width: 16px;
     transition: transform 0.75s;
 }
-.social-media p,
+.social-media h4,
 .text-boxes-subtitle {
-    font-size: 20px;
-    font-weight: 400;
-    color: rgb(198, 198, 198);
+    font-weight: bold;
 }
 .social-media:hover {
     background-color: rgba(148, 200, 234, 0.1);
@@ -66,6 +57,7 @@
     transform: rotate(-45deg);
 }
 
+/* Email section */
 .contact-email {
     display: flex;
     flex-direction: column;

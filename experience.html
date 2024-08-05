@@ -17,14 +17,14 @@
     <body>
         <header class="header">
             <div class="left-section">
-                <a href="index.html#top"><img class="jc-logo" src="images/jc-logo-horizontal-1.png"></a>
+                <a href="index.html"><img class="jc-logo" src="images/jc-logo-horizontal-1.png"></a>
             </div>
             <div class="middle-section">
-                <a href="index.html"><p>//  Home</p></a>
-                <a href="work.html"><p>//  Work</p></a>
-                <a href="about.html"><p>//  About me</p></a>
-                <a href="#top"><p>//  Experience</p></a>
-                <a href="contact.html"><p>//  Contact</p></a>
+                <a href="index.html"><h4><p>//  Home</p></h4></a>
+                <a href="work.html"><h4><p>//  Work</p></h4></a>
+                <a href="about.html"><h4><p>//  About me</p></h4></a>
+                <a href="#top"><h4><p>//  Experience</p></h4></a>
+                <a href="contact.html"><h4><p>//  Contact</p></h4></a>
             </div>
             <div class="right-section">
                 <a href="https://github.com/jucax" target="_blank"><img class="github-icon" src="icons/github-icon.png"></a>
@@ -33,58 +33,94 @@
                 <a href="https://x.com/jcarlos_mar" target="_blank"><img class="x-icon" src="icons/x-icon.png"></a>
             </div>
         </header>
+       
+        <header class="responsive-header">
+            <div class="left-section">
+                <a href="index.html"><img class="jc-logo" src="images/jc-logo-horizontal-1.png"></a>
+            </div>
+            <div class="menu-section" onclick="toggleMenu()">
+                <img class="menu-icon" src="icons/menu-icon.png" alt="Menu Icon">
+            </div>
+        </header>
+        <nav class="mobile-nav">
+            <a href="index.html"><h4><p>//  Home</p></h4></a>
+            <a href="work.html"><h4><p>//  Work</p></h4></a>
+            <a href="about.html"><h4><p>//  About me</p></h4></a>
+            <a href="#top"><h4><p>//  Experience</p></h4></a>
+            <a href="contact.html"><h4><p>//  Contact</p></h4></a>
+            <div class="nav-button-section">
+                <a href="https://github.com/jucax" target="_blank"><img class="github-icon" src="icons/github-icon.png"></a>
+                <a href="https://www.linkedin.com/in/jcarlos-martinez/" target="_blank"><img class="linkedin-icon" src="icons/linkedln-icon.png"></a>
+                <a href="https://www.instagram.com/jcarlos.mar/" target="_blank"><img class="instagram-icon" src="icons/instagram-icon.png"></a>
+                <a href="https://x.com/jcarlos_mar" target="_blank"><img class="x-icon" src="icons/x-icon.png"></a>
+            </div>
+        </nav>
 
         <section class="experience-home">
             <div class="text">
-                <p class="title">Professional Experience.</p>
-                <p class="subtitle">Discover my journey through diverse roles, where I've gained valuable skills and hands-on experience.</p>
-                <p class="content">From internships at renowned companies to part-time positions that honed my abilities, each role has contributed significantly to my development as a future Full Stack developer.</p>
+                <h1>Professional Experience.</h1>
+                <h3 class="subtitle">Discover my journey through diverse roles, where I've gained valuable skills and hands-on experience.</h3>
+                <h4 class="content">From internships at renowned companies to part-time positions that honed my abilities, each role has contributed significantly to my development as a future Full Stack developer.</h4>
             </div>
             <img class="experience-home-illustration" src="images/illustration-3.png">
         </section>
         
         <section class="experience experience-odd">
             <div class="text">
-                <p class="subtitle-blue">Fine Arts Technical Assistant - Part time job</p>
-                <p class="title">Southwestern University.</p>
-                <p class="subtitle">February 2024 - Present</p>
+                <h4 class="subtitle-blue">Fine Arts Technical Assistant - Part time job</h4>
+                <h2 class="title">Southwestern University.</h2>
+                <h4 class="subtitle">February 2024 - Present</h4>
                 <ul class="content">
-                    <li>Manage live streaming and recording equipment, ensuring seamless operation during performances and events in the theater every weekend.</li><br>
-                    <li>Supervise the setup and calibration of lighting, sound, and video systems</li><br>
-                    <li>Collaborate with production teams to troubleshoot technical issues and implement solutions, maintaining smooth execution of performances and events.</li>
+                    <h4><li>Manage live streaming and recording equipment, ensuring seamless operation during performances and events in the theater every weekend.</li></h4><br>
+                    <h4><li>Supervise the setup and calibration of lighting, sound, and video systems</li></h4><br>
+                    <h4><li>Collaborate with production teams to troubleshoot technical issues and implement solutions, maintaining smooth execution of performances and events.</h4></li>
                 </ul>
-                <p class="subtitle">Georgetown, Texas</p>
+                <h4 class="subtitle">Georgetown, Texas</h4>
             </div>
             <img class="experience-illustration" src="images/experience-2-1.png">
         </section>
 
         <section class="experience">
             <div class="text">
-                <p class="subtitle-blue">Financial Products Assistant - Internship</p>
-                <p class="title">Bank Azteca.</p>
-                <p class="subtitle">June 2022 - July 2022</p>
+                <h4 class="subtitle-blue">Financial Products Assistant - Internship</h4>
+                <h2 class="title">Bank Azteca.</h2>
+                <h4 class="subtitle">June 2022 - July 2022</h4>
                 <ul class="content">
-                    <li>Contributed to proposals for new products, especially to the renewal of the bank's mobile application.</li><br>
-                    <li>Created and entered information into bank database to generate graphs and reports related to the mobile app</li><br>
-                    <li>Learned about the functioning of the bank, from individual users to the macroeconomics systems used with some of the largest Mexican companies that are their clients</li>
+                    <h4><li>Contributed to proposals for new products, especially to the renewal of the bank's mobile application.</li></h4><br>
+                    <h4><li>Created and entered information into bank database to generate graphs and reports related to the mobile app</li></h4><br>
+                    <h4><li>Learned about the functioning of the bank, from individual users to the macroeconomics systems used with some of the largest Mexican companies that are their clients</li></h4>
                 </ul>
-                <p class="subtitle">Mexico City, Mexico</p>
+                <h4 class="subtitle">Mexico City, Mexico</h4>
             </div>
             <img class="experience-illustration" src="images/experience-1-1.jpg">
         </section>
 
         <footer class="footer">
             <div class="footer-menu">
-                <p>© Copyright 2024 . Made by</p>
+                <h5>© Copyright 2024 . Made by</h5>
                 <a href="index.html"><img class="footer-logo" src="images/JC logo horizontal-2.png"></a>
             </div>
             <div class="footer-menu">
-                <a href="index.html"><p>Home</p></a>
-                <a href="work.html"><p>Work</p></a>
-                <a href="about.html"><p>About me</p></a>
-                <a href="#top"><p>Experience</p></a>
-                <a href="contact.html"><p>Contact</p></a>
+                <a href="index.html"><h5>Home</h5></a>
+                <a href="work.html"><h5>Work</h5></a>
+                <a href="about.html"><h5>About me</h5></a>
+                <a href="#top"><h5>Experience</h5></a>
+                <a href="contact.html"><h5>Contact</h5></a>
+            </div>
+        </footer>
+
+        <footer class="responsive-footer">
+            <div class="footer-menu">
+                <p>© Copyright 2024 . Made by</p>
+                <a href="index.html"><img class="footer-logo" src="images/JC logo horizontal-2.png"></a>
             </div>
         </footer>
     </body>
+
+    <script>
+        function toggleMenu() {
+            const mobileNav = document.querySelector('.mobile-nav');
+            mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </html>

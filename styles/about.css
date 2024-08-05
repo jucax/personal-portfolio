@@ -19,7 +19,7 @@
 }
 .about-home .content,
 .facts-home .content,
-.element .conten {
+.element .content h4 {
     color: rgb(255, 255, 255);
     margin-top: 26px;
 }
@@ -36,9 +36,7 @@
     background-color: rgb(72, 72, 72);
     margin-top: 80px;
 }
-.title {
-    margin-top: 26px;
-}
+.title,
 .subtitle {
     margin-top: 26px;
 }
@@ -52,6 +50,8 @@
 .element {
     gap: 200px;
     margin: 30px 0px 80px 0px;
+    justify-content: space-between;
+    min-width: 1240px;
 }
 .elements {
     display: flex;

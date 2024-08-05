@@ -17,14 +17,14 @@
     <body>
         <header class="header">
             <div class="left-section">
-                <a href="index.html#top"><img class="jc-logo" src="images/jc-logo-horizontal-1.png"></a>
+                <a href="index.html"><img class="jc-logo" src="images/jc-logo-horizontal-1.png"></a>
             </div>
             <div class="middle-section">
-                <a href="index.html"><p>//  Home</p></a>
-                <a href="work.html"><p>//  Work</p></a>
-                <a href="about.html"><p>//  About me</p></a>
-                <a href="experience.html"><p>//  Experience</p></a>
-                <a href="#top"><p>//  Contact</p></a>
+                <a href="index.html"><h4><p>//  Home</p></h4></a>
+                <a href="work.html"><h4><p>//  Work</p></h4></a>
+                <a href="about.html"><h4><p>//  About me</p></h4></a>
+                <a href="experience.html"><h4><p>//  Experience</p></h4></a>
+                <a href="#top"><h4><p>//  Contact</p></h4></a>
             </div>
             <div class="right-section">
                 <a href="https://github.com/jucax" target="_blank"><img class="github-icon" src="icons/github-icon.png"></a>
@@ -33,23 +33,45 @@
                 <a href="https://x.com/jcarlos_mar" target="_blank"><img class="x-icon" src="icons/x-icon.png"></a>
             </div>
         </header>
+       
+        <header class="responsive-header">
+            <div class="left-section">
+                <a href="index.html"><img class="jc-logo" src="images/jc-logo-horizontal-1.png"></a>
+            </div>
+            <div class="menu-section" onclick="toggleMenu()">
+                <img class="menu-icon" src="icons/menu-icon.png" alt="Menu Icon">
+            </div>
+        </header>
+        <nav class="mobile-nav">
+            <a href="index.html"><h4><p>//  Home</p></h4></a>
+            <a href="work.html"><h4><p>//  Work</p></h4></a>
+            <a href="about.html"><h4><p>//  About me</p></h4></a>
+            <a href="experience.html"><h4><p>//  Experience</p></h4></a>
+            <a href="#top"><h4><p>//  Contact</p></h4></a>
+            <div class="nav-button-section">
+                <a href="https://github.com/jucax" target="_blank"><img class="github-icon" src="icons/github-icon.png"></a>
+                <a href="https://www.linkedin.com/in/jcarlos-martinez/" target="_blank"><img class="linkedin-icon" src="icons/linkedln-icon.png"></a>
+                <a href="https://www.instagram.com/jcarlos.mar/" target="_blank"><img class="instagram-icon" src="icons/instagram-icon.png"></a>
+                <a href="https://x.com/jcarlos_mar" target="_blank"><img class="x-icon" src="icons/x-icon.png"></a>
+            </div>
+        </nav>
 
         <section class="contact-home">
             <div class="text">
-                <p class="title">Contact.</p>
-                <p class="subtitle">You can contact me through social media or send me an email.</p>
+                <h1>Contact.</h1>
+                <h3 class="subtitle">You can contact me through social media or send me an email.</h3>
                 <div class="social-media-box">
                     <a href="https://github.com/jucax" target="_blank">
                         <div class="social-media">
                             <img class="social-media-icon" src="icons/github-icon.png">
-                            <p>GitHub</p>
+                            <h4>GitHub</h4>
                             <img class="social-media-arrow-icon" src="icons/arrow-icon-2.png">
                         </div>
                     </a>
                     <a href="https://www.linkedin.com/in/jcarlos-martinez/" target="_blank">
                         <div class="social-media">
                             <img class="social-media-icon" src="icons/linkedln-icon.png">
-                            <p>Linkedin</p>
+                            <h4>Linkedin</h4>
                             <img class="social-media-arrow-icon" src="icons/arrow-icon-2.png">
                         </div>
                     </a>
@@ -58,14 +80,14 @@
                     <a href="https://www.instagram.com/jcarlos.mar/" target="_blank">
                         <div class="social-media">
                             <img class="social-media-icon" src="icons/instagram-icon.png">
-                            <p>Instagram</p>
+                            <h4>Instagram</h4>
                             <img class="social-media-arrow-icon" src="icons/arrow-icon-2.png">
                         </div>
                     </a>
                     <a href="https://x.com/jcarlos_mar" target="_blank">
                         <div class="social-media">
                             <img class="social-media-icon" src="icons/x-icon.png">
-                            <p>Twitter</p>
+                            <h4>Twitter</h4>
                             <img  class="social-media-arrow-icon"src="icons/arrow-icon-2.png">
                         </div>
                     </a>
@@ -78,13 +100,13 @@
             <p class="email-title">Send me an email</p>
             <div class="text-boxes">
                 <div class="left-text-boxes">
-                    <p class="text-boxes-subtitle">Name</p>
+                    <h4 class="text-boxes-subtitle">Name</h4>
                     <input class="text-box-small" type="text"></input>
-                    <p class="text-boxes-subtitle">Email</p>
+                    <h4 class="text-boxes-subtitle">Email</h4>
                     <input class="text-box-small" type="text"></input>
                 </div>
                 <div class="right-text-boxes">
-                    <p class="text-boxes-subtitle">Message</p>
+                    <h4 class="text-boxes-subtitle">Message</h4>
                     <input class="text-box-big" type="text"></input>
                     <div class="button-box">
                         <button class="email-button">Send email</button>
@@ -95,16 +117,30 @@
 
         <footer class="footer">
             <div class="footer-menu">
-                <p>© Copyright 2024 . Made by</p>
+                <h5>© Copyright 2024 . Made by</h5>
                 <a href="index.html"><img class="footer-logo" src="images/JC logo horizontal-2.png"></a>
             </div>
             <div class="footer-menu">
-                <a href="index.html"><p>Home</p></a>
-                <a href="work.html"><p>Work</p></a>
-                <a href="about.html"><p>About me</p></a>
-                <a href="experience.html"><p>Experience</p></a>
-                <a href="#top"><p>Contact</p></a>
+                <a href="index.html"><h5>Home</h5></a>
+                <a href="work.html"><h5>Work</h5></a>
+                <a href="about.html"><h5>About me</h5></a>
+                <a href="experience.html"><h5>Experience</h5></a>
+                <a href="#top"><h5>Contact</h5></a>
+            </div>
+        </footer>
+
+        <footer class="responsive-footer">
+            <div class="footer-menu">
+                <p>© Copyright 2024 . Made by</p>
+                <a href="index.html"><img class="footer-logo" src="images/JC logo horizontal-2.png"></a>
             </div>
         </footer>
     </body>
+
+    <script>
+        function toggleMenu() {
+            const mobileNav = document.querySelector('.mobile-nav');
+            mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </html>

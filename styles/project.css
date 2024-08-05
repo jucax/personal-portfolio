@@ -1,3 +1,4 @@
+/* Project home section */
 .project-home {
     display: flex;
     flex-direction: row;
@@ -9,15 +10,7 @@
 .text {
     width: 500px;
 }
-.project-home .title {
-    font-size: 70px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-}
 .project-home .subtitle {
-    font-size: 24px;
-    color: rgb(198, 198, 198);
-    line-height: 36px;
     margin-top: 26px;
 }
 .link-button {
@@ -41,6 +34,7 @@
     object-fit: cover;
 }
 
+/* Project details section */
 .details,
 .buttons {
     display: flex;
@@ -51,9 +45,6 @@
     gap: 200px;
     padding: 50px 0px;
 }
-.buttons {
-    padding: 0px;
-}
 .about-it,
 .tools {
     display: flex;
@@ -63,17 +54,13 @@
     line-height: 35px;
     width: 550px;
 }
-.title {
-    font-size: 40px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    margin-bottom: 30px;
-}
+.title,
 .subtitle {
-    font-size: 20px;
-    color: rgb(198, 198, 198);
+    margin-bottom: 26px;
 }
-
+.content {
+    color: rgb(255, 255, 255);
+}
 .tools-used {
     display: flex;
     flex-direction: column;
@@ -86,13 +73,6 @@
     gap: 40px;
     margin-bottom: 40px;
 }
-.skills-subtitle,
-.languaje-subtitle {
-    font-size: 26px;
-    font-weight: 400;
-    text-align: center;
-    color: rgb(198, 198, 198);
-}
 .programming-skills {
     display: flex;
     flex-direction: row;
@@ -100,25 +80,15 @@
     justify-content: left;
     gap: 16px;
 }
-.programming-skills p {
+.programming-skills h6 {
     font-size: 16px;
     color: rgb(255, 255, 255);
     padding: 14px 18px 14px 18px;
     background-color: rgb(56, 56, 56);
     border-radius: 8px;
 }
-.languajes-box {
-    display: flex;
-    flex-direction: column;
-}
-.languajes-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
 
+/* Project buttons box */
 .project-buttons-box {
     display: flex;
     flex-direction: row;
@@ -146,12 +116,6 @@
 .project-button-arrow-icon {
     width: 16px;
     transition: transform 0.75s;
-}
-.project-button p,
-.text-boxes-subtitle {
-    font-size: 20px;
-    font-weight: 400;
-    color: rgb(198, 198, 198);
 }
 .project-button:hover {
     background-color: rgba(148, 200, 234, 0.1);
