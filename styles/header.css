@@ -32,7 +32,7 @@
     gap: 20px;
     width: 642px;
 }
-.middle-section p {
+.middle-section h4 {
     text-wrap: nowrap;
     color: rgb(255, 255, 255);
     padding: 4px 8px 4px 8px;
@@ -136,7 +136,7 @@
     .middle-section {
         justify-content: center;
     }
-    .middle-section p {
+    .middle-section h4 {
         font-size: 16px;
     }
     .right-section {
@@ -150,7 +150,7 @@
     }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1090px) {
     .header {
         display: none;
     }
@@ -161,5 +161,4 @@
         margin-left: 30px;
         margin-right: 40px;
     }
-
 }

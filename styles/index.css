@@ -14,7 +14,6 @@
 }
 .main-home .text {
     width: 500px;
-    margin-left: 20px;
 }
 .main-home .subtitle {
     line-height: 36px;
@@ -48,11 +47,9 @@
     background-color: rgba(148, 200, 234, 0.1);
     cursor: pointer;
 }
-
 .main-home-illustration {
     width: 500px;
     object-fit: cover;
-    margin-right: 20px;
 }
 
 /* Other sections */
@@ -118,7 +115,7 @@
     color: rgb(255, 255, 255);
 }
 .arrow-icon {
-    width: 25px;
+    width: 24px;
     transition: transform 0.75s;
 }
 .project-subtitle {
@@ -216,7 +213,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1200px;
+    gap: 280px;
     margin-top: 60px;
 }
 .skills-box {
@@ -240,6 +237,7 @@
 .languaje-subtitle {
     font-weight: bold;
     text-align: center;
+    text-wrap: nowrap;
 }
 .programming-skills,
 .pc-mac-skills,
@@ -269,6 +267,7 @@
     padding: 14px 18px 14px 18px;
     background-color: rgb(56, 56, 56);
     border-radius: 8px;
+    text-wrap: nowrap;
 }
 .pc-mac-skills h6,
 .design-skills h6,
@@ -277,6 +276,7 @@
     padding: 14px 18px 14px 18px;
     background-color: rgb(198, 198, 198);
     border-radius: 8px;
+    text-wrap: nowrap;
 }
 .languajes-box {
     display: flex;
@@ -287,7 +287,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 45px;
 }
 
 /* Experiences section */
@@ -298,6 +298,8 @@
     gap: 20px;
     max-width: 1000px;
     margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 0 20px; 
 }
 .experience {
@@ -425,15 +427,22 @@
 }
 .text-boxes {
     display: flex;
-    flex: row;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
     gap: 40px;
+    max-width: calc(100% - 80px);
+    width: 100%;
+    background-color: aliceblue;
 }
 .left-text-boxes,
 .right-text-boxes {
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 475px;
+    justify-content: top;
+    width: 100%;
+    background-color: aquamarine;
 }
 .text-box-small,
 .text-box-big {
@@ -446,6 +455,7 @@
     border: 2px solid rgb(255, 255, 255);
     padding-left: 10px;
     padding-right: 10px;
+    
 }
 .text-box-big {
     height: 150px;
@@ -459,102 +469,194 @@
 
 /* Responsive Design */
 @media (max-width: 1450px) {
-    .project {
-        width: 90%;
-        margin: 0 auto;
+    /* General scale */
+    h1 {
+        font-size: 60px;
     }
-    .title {
-        font-size: 32px;
+    h2 {
+        font-size: 35px;
     }
-    .subtitle {
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
         font-size: 18px;
     }
-}
+    h5 {
+        font-size: 16px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    .work .text,
+    .about-me .text,
+    .professional-experience .text,
+    .contact .text {
+        width: 890px;
+    }
+    .connect-button {
+        font-size: 18px;
+    }
+    .view-button,
+    .know-button,
+    .email-button {
+        font-size: 14px;
+    }
 
-@media (max-width: 1240px) {
+    /* Main home section scale */
     .main-home {
         gap: 100px;
     }
-    .main-home .title {
-        font-size: 60px;
-    }
-    .main-home .subtitle {
-        font-size: 20px;
-        color: rgb(198, 198, 198);
-        line-height: 36px;
-        margin-top: 26px;
-    }
-    .connect-button {
-        font-size: 16px;
-    }
     .main-home-illustration {
-        width: 400px;
+        width: 450px;
+    }
+
+    /* Projects section scale */
+    .recent-projects {
+        gap: 50px;
+    }
+    .project {
+        width: 320px;
+    }
+    .project-picture {
+        height: 170px;
+    }
+    .project-title-box {
+        margin-bottom: 12px;
+    }
+    .project-subtitle {
+        margin-bottom: 20px;
+    }
+    .arrow-icon {
+        width: 20px;
+    }
+
+    /* Elements section scale */
+    .element {
+        width: 310px;
+        min-height: 520px;
+    }
+    .element-icon {
+        width: 48px;
+    }
+
+    /* Skills section scale */
+    .skills-languajes {
+        gap: 100px;
+    }
+
+    /* Experiences section scale */
+    .experience-logo {
+        width: 145px;
+    }
+
+    /* Social media section scale */
+    .social-media {
+        width: 200px;
     }
 }
 
-@media (max-width: 1024px) {
-    .recent-projects {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
+@media (max-width: 1200px) {
+    /* General scale */
+    h1 {
+        font-size: 70px;
     }
-    .elements {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
+    h2 {
+        font-size: 40px;
     }
-    .project {
-        width: 90%;
-        max-width: 600px;
-        margin: 0 auto;
+    h3 {
+        font-size: 24px;
     }
-    .skills-languajes {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+    h4 {
+        font-size: 20px;
     }
-    .skills-row {
-        flex-direction: column;
-        align-items: center;
+    h5 {
+        font-size: 18px;
     }
-    .programming-skills,
-    .pc-mac-skills,
-    .video-skills,
-    .design-skills {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        row-gap: 20px;
-        column-gap: 0px;
-        width: 100%;
-        justify-items: center;
+    h6 {
+        font-size: 14px;
     }
-    .pc-mac-skills {
-        position: block;
-        left: 0px;
+    .connect-button {
+        font-size: 20px;
     }
-    .video-skills {
-        position: relative;
-        left: 0px;
-    }
-    .design-skills {
-        position: relative;
-        left: 0px;
-    }
-    .skills-subtitle,
-    .languaje-subtitle {
-        text-align: center;
-    }
-    .languajes-box {
-        margin-top: 50px;
+    .view-button,
+    .know-button,
+    .email-button {
+        font-size: 16px;
     }
 
-    .social-media-box {
+    /* Main home section scale */
+    .main-home {
         flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 100px ;
+    }
+    .main-home .text {
+        text-align: center;
+    }
+
+    /* Projects section scale */
+    .recent-projects {
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        border: none;
+    }
+    .project {
+        width: 380px;
+    }
+    .project-picture {
+        height: 200px;
+    }
+    .project-title-box {
+        margin-bottom: 16px;
+    }
+    .project-subtitle {
+        margin-bottom: 30px;
+    }
+    .arrow-icon {
+        width: 24px;
+    }
+
+    /* Elements section scale */
+    .elements {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .element {
+        width: 365px;
+        min-height: 490px;
+    }
+    .element-icon {
+        width: 64px;
+    }
+
+    /* Skills section scale */
+    .skills-languajes {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+    .languajes-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Experiences section scale */
+    .experience-logo {
+        width: 170px;
+    }
+
+    /* Social media section scale */
+    .social-media-box {
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
+        border: none;
     }
     .social-media {
         border: 1px solid rgb(72, 72, 72);
@@ -562,142 +664,148 @@
     }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1090px) {
+    /* Experiences section scale */
     .experience-content {
-        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
         align-items: center;
-        gap: 20px;
     }
 
-    .experience-title-box {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .experience-title-box p {
-        font-size: 18px;
-    }
-    .experience-info p {
-        font-size: 18px;
-    }
-
-    .experience-description {
-        font-size: 18px;
-    }
-
-    .experience-skills p {
-        font-size: 14px;
-        padding: 2px 8px 2px 8px;
-    }
-    .experience-logo {
-        width: 200px;
-    }
+    /* Email section scale */
     .text-boxes {
         flex-direction: column;
+        gap: 0px;
     }
 }
 
-@media (max-width: 768px) {
-    .main-home {
+@media (max-width: 891px) {
+    /* General scale */
+    .work .text,
+    .about-me .text,
+    .professional-experience .text,
+    .contact .text {
+        width: 450px;
+    }
+}
+
+@media (max-width: 866px) {
+    /* Skills section scale */
+    .skills-row {
         flex-direction: column;
         align-items: center;
-        padding: 120px 20px;
-        gap: 20px;
+        justify-content: center;
     }
-    .text {
-        width: 100%;
-        max-width: 400px;
-        text-align: center;
+    .programming-skills,
+    .pc-mac-skills,
+    .video-skills,
+    .design-skills {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
-    .main-home-illustration {
-        width: 80%;
-        margin-top: 20px;
+    .pc-mac-skills,
+    .video-skills,
+    .design-skills {
+        left: 00px;
     }
-    .connect-button {
-        margin-top: 20px;
+    .languajes-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .project-title {
+    /* Experiences section scale */
+    .experience-title-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .experience-title-box h4 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    /* General scale */
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
         font-size: 18px;
     }
-    .project-subtitle {
+    h5 {
+        font-size: 16px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    .work,
+    .about-me,
+    .professional-experience,
+    .contact {
+        margin-top: 80px;
+    }
+    .work .text,
+    .about-me .text,
+    .professional-experience .text,
+    .contact .text {
+        width: 300px;
+    }
+    .connect-button {
+        font-size: 18px;
+    }
+    .view-button,
+    .know-button,
+    .email-button {
         font-size: 14px;
     }
-    .project-details {
-        font-size: 10px;
+
+    /* Main home section scale */
+    .main-home-illustration {
+        width: 350px;
+    }
+
+    /* Projects section scale */
+    .project {
+        width: 320px;
+    }
+    .project-picture {
+        height: 170px;
+    }
+    .project-title-box {
+        margin-bottom: 12px;
+    }
+    .project-subtitle {
+        margin-bottom: 20px;
     }
     .arrow-icon {
         width: 20px;
     }
 
-    .programming-skills,
-    .pc-mac-skills,
-    .video-skills,
-    .design-skills {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+    /* Elements section scale */
+    .element {
+        width: 310px;
+        min-height: 0px;
     }
-}
-
-@media (max-width: 480px) {
-    .title {
-        font-size: 28px;
-    }
-    .subtitle {
-        font-size: 16px;
-    }
-    .project-title {
-        font-size: 16px;
-    }
-    .project-subtitle {
-        font-size: 12px;
-    }
-    .project-details {
-        font-size: 8px;
-    }
-    .arrow-icon {
-        width: 18px;
-    }
-    .skills-title,
-    .languajes-title,
-    .email-title {
-        font-size: 24px;
+    .element-icon {
+        width: 48px;
     }
 
-    .skills-subtitle,
-    .languaje-subtitle {
-        font-size: 20px;
+    /* Skills section scale */
+    .skills-languajes {
+        gap: 50px;
     }
 
-    .programming-skills,
-    .pc-mac-skills,
-    .video-skills,
-    .design-skills {
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    .experience-title-box p {
-        font-size: 16px;
-    }
-
-    .experience-info p {
-        font-size: 16px;
-    }
-
-    .experience-description {
-        font-size: 16px;
-    }
-
-    .experience-skills p {
-        font-size: 12px;
-        padding: 2px 6px 2px 6px;
-    }
-
+    /* Experiences section scale */
     .experience-logo {
-        width: 80px;
+        width: 145px;
     }
 }
+

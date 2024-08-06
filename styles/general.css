@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -19,6 +25,7 @@ h2 {
     font-size: 40px;
     font-weight: bold;
     color: rgb(255, 255, 255);
+    line-height: 50px;
 }
 h3 {
     font-size: 24px;
