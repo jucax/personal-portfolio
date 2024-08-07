@@ -10,9 +10,9 @@
     height: 90px;
     z-index: 100;
     background-color: rgb(46, 42, 42);
-    border-bottom-style: solid;
-    border-bottom-color: rgb(72, 72, 72);
-    border-bottom-width: 1px;
+    border-bottom: 1px solid rgb(72, 72, 72);
+    padding: 0 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
 }
 .left-section {
     margin-left: 70px;
@@ -90,6 +90,7 @@
     display: none;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: rgb(46, 42, 42);
     position: fixed;
     top: 90px;
@@ -160,5 +161,18 @@
     .left-section {
         margin-left: 30px;
         margin-right: 40px;
+    }
+}
+@media (max-width: 500px) {
+    .jc-logo {
+        height: 60px;
+    }
+    .menu-icon {
+        width: 24px;
+    }
+}
+@media (max-width: 360px) {
+    .jc-logo {
+        height: 50px;
     }
 }

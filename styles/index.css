@@ -433,7 +433,6 @@
     gap: 40px;
     max-width: calc(100% - 80px);
     width: 100%;
-    background-color: aliceblue;
 }
 .left-text-boxes,
 .right-text-boxes {
@@ -442,7 +441,6 @@
     align-items: left;
     justify-content: top;
     width: 100%;
-    background-color: aquamarine;
 }
 .text-box-small,
 .text-box-big {
@@ -729,7 +727,7 @@
 @media (max-width: 500px) {
     /* General scale */
     h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
     h2 {
         font-size: 35px;
@@ -768,8 +766,14 @@
     }
 
     /* Main home section scale */
+    .main-home .text {
+        width: 280px;
+    }
+    .main-home .subtitle {
+        text-wrap: wrap;
+    }
     .main-home-illustration {
-        width: 350px;
+        width: 300px;
     }
 
     /* Projects section scale */
