@@ -89,7 +89,7 @@
 
 /* Responsive Design */
 @media (max-width: 1450px) {
-    /* Main home section scale */
+    /* Work home section scale */
     .work-home {
         gap: 100px;
     }
@@ -121,7 +121,7 @@
 }
 
 @media (max-width: 1200px) {
-    /* Main home section scale */
+    /* Work home section scale */
     .work-home {
         flex-direction: column;
         align-items: center;
@@ -133,7 +133,7 @@
         text-align: center;
     }
 
-    /* Projects section scale */
+    /* All work section scale */
     .projects-row, 
     .incomplete-projects-row {
         flex-wrap: wrap;
@@ -158,7 +158,7 @@
 }
 
 @media (max-width: 500px) {
-    /* Main home section scale */
+    /* Work home section scale */
     .work-home .text {
         width: 280px;
     }
@@ -169,7 +169,7 @@
         width: 300px;
     }
 
-    /* Projects section scale */
+    /* All work section scale */
     .project,
     .fake-project {
         width: 320px;

@@ -23,8 +23,8 @@
     color: rgb(255, 255, 255);
     margin-top: 26px;
 }
-.about-home-illustration {
-    height: 400px;
+.about-home-illustration{
+    width: 250px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -40,10 +40,14 @@
 .subtitle {
     margin-top: 26px;
 }
-.facts-home-illustration {
-    height: 300px;
+.facts-home-illustration,
+.secret-about-home-illustration  {
+    width: 450px;
     object-fit: cover;
     border-radius: 6px;
+}
+.secret-about-home-illustration {
+    display: none;
 }
 
 /* All elements section */
@@ -51,7 +55,8 @@
     gap: 200px;
     margin: 30px 0px 80px 0px;
     justify-content: space-between;
-    min-width: 1240px;
+    max-width: 1240px;
+    width: 100%;
 }
 .elements {
     display: flex;
@@ -65,7 +70,8 @@
     flex-direction: row;
     align-items: center;
     gap: 30px;
-    width: 1250px;
+    max-width: 1240px;
+    width: 100%;
 }
 .element-header-icon {
     width: 64px;
@@ -87,4 +93,117 @@
 }
 .about-rectangle-picture {
     height: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 1450px) {
+    /* About home section scale */
+    .about-home,
+    .facts-home,
+    element {
+        gap: 100px;
+    }
+    .about-home-illustration {
+        width: 200px;
+    }
+
+    /* Facts home section scale*/
+    .facts-home-illustration,
+    .secret-about-home-illustration {
+        width: 400px;
+    }
+
+    /* All elements section scale */
+    .element {
+        width: 1150px;
+    }
+    .element-header {
+        width: 1150px;
+    }
+    .element-header-icon {
+        width: 48px;
+    }
+    .element-header-decoration {
+        height: 8px;
+    }
+    .about-picture {
+        height: 250;
+    }
+    .about-rectangle-picture {
+        height: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* About home section scale */
+    .about-home,
+    .facts-home,
+    .element {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 100px;
+        margin-top: 50px;
+    }
+    .about-home .text {
+        text-align: center;
+    }
+    .about-home-illustration {
+        display: none;
+    }
+    .secret-about-home-illustration {
+        display: flex;
+    }
+
+    /* Facts home section scale */
+    .facts-home {
+        padding: 0px;
+        padding-bottom: 30px;
+        margin-top: 0px;
+    }
+    .facts-home-illustration {
+        display: none;
+    }
+
+    /* All elements section scale */
+    .element {
+        margin: 0px;
+    }
+    .element-header {
+        width: 500px;
+    }
+    .element-header-icon {
+        width: 64px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* About home section scale */
+    .about-home .text,
+    .element .text,
+    .facts-home .text {
+        width: 280px;
+    }
+}
+
+@media (max-width: 500px) {
+    /* About home section scale */
+    .secret-about-home-illustration {
+        width: 300px;
+    }
+
+    /* All elements section scale */
+    .element-header {
+        gap: 20px;
+        width: 325px;
+    }
+    .element-header-icon {
+        width: 48px;
+    }
+    .about-picture {
+        height: 200px;
+    }
+    .about-rectangle-picture {
+        height: 250px;
+    }
 }
