@@ -7,7 +7,7 @@
     margin-top: 120px;
     gap: 260px;
 }
-.text {
+.work-home .text {
     width: 500px;
 }
 .work-home .subtitle,
@@ -23,12 +23,12 @@
 }
 
 /* All work section */
-.all-work{
+.all-work {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .projects-row, 
 .incomplete-projects-row {
@@ -48,7 +48,7 @@
     transition: box-shadow 0.75s ease-in-out;
 }
 .fake-project {
-    opacity: 0;
+    display: none;
 }
 .project-picture {
     height: 200px;
@@ -85,4 +85,107 @@
 }
 .project:hover .arrow-icon {
     transform: rotate(-45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 1450px) {
+    /* Main home section scale */
+    .work-home {
+        gap: 100px;
+    }
+    .work-home-illustration {
+        width: 450px;
+    }
+
+    /* All work section scale */
+    .projects-row, 
+    .incomplete-projects-row {
+        gap: 50px;
+    }
+    .project,
+    .fake-project {
+        width: 320px;
+    }
+    .project-picture {
+        height: 170px;
+    }
+    .project-title-box {
+        margin-bottom: 12px;
+    }
+    .project-subtitle {
+        margin-bottom: 20px;
+    }
+    .arrow-icon {
+        width: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* Main home section scale */
+    .work-home {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 100px ;
+    }
+    .work-home .text {
+        text-align: center;
+    }
+
+    /* Projects section scale */
+    .projects-row, 
+    .incomplete-projects-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .project {
+        width: 380px;
+    }
+    .project-picture {
+        height: 200px;
+    }
+    .project-title-box {
+        margin-bottom: 16px;
+    }
+    .project-subtitle {
+        margin-bottom: 30px;
+    }
+    .arrow-icon {
+        width: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Main home section scale */
+    .work-home {
+        margin-top: 50px;
+    }
+    .work-home .text {
+        width: 280px;
+    }
+    .work-home .subtitle {
+        text-wrap: wrap;
+    }
+    .work-home-illustration {
+        width: 300px;
+    }
+
+    /* Projects section scale */
+    .project,
+    .fake-project {
+        width: 320px;
+    }
+    .project-picture {
+        height: 170px;
+    }
+    .project-title-box {
+        margin-bottom: 12px;
+    }
+    .project-subtitle {
+        margin-bottom: 20px;
+    }
+    .arrow-icon {
+        width: 20px;
+    }
 }

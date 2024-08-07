@@ -68,3 +68,122 @@ button {
 .text-bold {
     font-weight: bold;
 }
+
+/* Responsive Design */
+@media (max-width: 1450px) {
+    /* General scale */
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    .work .text,
+    .about-me .text,
+    .professional-experience .text,
+    .contact .text {
+        width: 890px;
+    }
+    .connect-button {
+        font-size: 18px;
+    }
+    .view-button,
+    .know-button,
+    .email-button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* General scale */
+    h1 {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+    .connect-button {
+        font-size: 20px;
+    }
+    .view-button,
+    .know-button,
+    .email-button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 891px) {
+    /* General scale */
+    .work .text,
+    .about-me .text,
+    .professional-experience .text,
+    .contact .text {
+        width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    /* General scale */
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    .work,
+    .about-me,
+    .professional-experience,
+    .contact {
+        margin-top: 80px;
+    }
+    .work .text,
+    .about-me .text,
+    .professional-experience .text,
+    .contact .text {
+        width: 300px;
+    }
+    .connect-button {
+        font-size: 18px;
+    }
+    .view-button,
+    .know-button,
+    .email-button {
+        font-size: 14px;
+    }
+}
