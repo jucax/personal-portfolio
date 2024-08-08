@@ -124,3 +124,76 @@
 .project-button:hover .project-button-arrow-icon {
     transform: rotate(-45deg);
 }
+
+/* Responsive Design */
+@media (max-width: 1450px) {
+    /* Project home section scale */
+    .project-home {
+        gap: 100px;
+    }
+    .project-home-illustration {
+        height: 250px;
+    }
+
+    /* Project details section scale */
+    .details,
+    .buttons {
+        gap: 100px;
+    }
+    .about-it,
+    .tools {
+        width: 470px;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* Project home section scale */
+    .project-home {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        padding: 100px;
+        margin-top: 50px;
+    }
+    .project-home .text {
+        text-align: center;
+    }
+
+    /* Project details section scale */
+    .details,
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        padding: 50px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Project home section scale */
+    .project-home .text {
+        width: 280px;
+    }
+    .project-home-illustration {
+        height: 170px;
+    }
+
+    /* Project details section scale */
+    .about-it,
+    .tools {
+        width: 280px;
+    }
+
+    /* Project buttons box */
+    .project-buttons-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border: none;
+    }
+    .project-button {
+        border: 1px solid rgb(72, 72, 72);
+        border-radius: 16px;
+    }
+}
