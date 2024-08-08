@@ -145,9 +145,9 @@
     overflow: hidden;
     border: 3px solid rgb(198, 198, 198);;
     width: 365px;
-    min-height: 500px;
+    height: 100%;
     padding: 26px;
-    transition: box-shadow 0.75s ease-in-out; /* Smooth transition for the glow effect */
+    transition: box-shadow 0.75s ease-in-out; 
 }
 @keyframes shake {
     0%, 100% { transform: translate(0, 0) rotate(2deg); }
@@ -157,11 +157,11 @@
     40%, 60% { transform: translate(3px, 0) rotate(2deg); }
 }
 .element:hover .element-icon {
-    animation: shake 1s ease-in-out; /* Duración de la animación */
+    animation: shake 1s ease-in-out;
     animation-delay: 1s;
 }
 .element:hover {
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Glow effect */
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
 .element-title-box {
@@ -187,13 +187,14 @@
     flex-direction: row;
     align-items: top;
     justify-content: left;
+    height: 100%;
     gap: 20px;
     margin-top: 20px;
 }
 .element-decoration {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     width: 40px;
     opacity: 0.5;
@@ -204,7 +205,7 @@
 }
 .element-decoration-line {
     border-left: 2px solid rgb(198, 198, 198);
-    height: 320px;
+    height: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -432,7 +433,7 @@
     align-items: top;
     justify-content: center;
     gap: 40px;
-    max-width: calc(100% - 80px);
+    max-width: calc(100% - 160px);
     width: 100%;
 }
 .left-text-boxes,
@@ -532,6 +533,12 @@
     .main-home .text {
         text-align: center;
     }
+    .work .text,
+    .about-me .text,
+    .professional-experience .text,
+    .contact .text {
+        width: 500px;
+    }
 
     /* Projects section scale */
     .recent-projects {
@@ -559,11 +566,10 @@
     .elements {
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: top;
     }
     .element {
         width: 365px;
-        min-height: 490px;
     }
     .element-icon {
         width: 64px;
@@ -658,6 +664,12 @@
     .main-home .text {
         width: 280px;
     }
+    .work .text,
+    .about-me .text,
+    .professional-experience .text,
+    .contact .text {
+        width: 280px;
+    }
     .main-home .subtitle {
         text-wrap: wrap;
     }
@@ -699,6 +711,11 @@
     /* Experiences section scale */
     .experience-logo {
         width: 145px;
+    }
+
+    /* Email section scale */
+    .text-boxes {
+        max-width: calc(100% - 80px);
     }
 }
 
