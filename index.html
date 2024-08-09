@@ -75,27 +75,16 @@
                 <h4 class="subtitle">Here you can see some of my personal projects.</h4>
             </div>
             <div class="recent-projects">
-                <a href="project-1.html"><div class="project">
-                    <img class="project-picture" src="images/project-1.png">
-                    <div class="project-description">
-                        <div class="project-title-box">
-                            <h4 class="project-title">Corre En El Tiempo</h4>
-                            <img class="arrow-icon" src="icons/arrow-icon.png">
-                        </div>
-                        <h5 class="project-subtitle">Videogame</h5>
-                        <h6>Designed by: Juan Carlos Martinez - Date: Dec 10, 2020</h6>
-                    </div>
-                </div></a>
 
                 <a href="project-2.html"><div class="project">
                     <img class="project-picture" src="images/project-2.png">
                     <div class="project-description">
                         <div class="project-title-box">
-                            <h4 class="project-title">Pero NoMeHackean?</h4>
+                            <h4 class="project-title">Pero ¿no me hackean?</h4>
                             <img class="arrow-icon" src="icons/arrow-icon.png">
                         </div>
                         <h5 class="project-subtitle">Personal Website </h5>
-                        <h6 class="project-details">Designed by: Juan Carlos Martinez  - Date: May 31, 2024</h6>
+                        <h6>Developed by: Juan Carlos Martinez  - Aug 10, 2024</h6>
                     </div>
                 </div></a>
 
@@ -107,7 +96,19 @@
                             <img class="arrow-icon" src="icons/arrow-icon.png">
                         </div>
                         <h5 class="project-subtitle">Personal Website</h5>
-                        <h6 class="project-details">Designed by: Juan Carlos Martinez  - Date: Jun 18, 2024</h6>
+                        <h6>Developed by: Juan Carlos Martinez  - Jun 18, 2024</h6>
+                    </div>
+                </div></a>
+
+                <a href="project-1.html"><div class="project">
+                    <img class="project-picture" src="images/project-1.png">
+                    <div class="project-description">
+                        <div class="project-title-box">
+                            <h4 class="project-title">Corre En El Tiempo</h4>
+                            <img class="arrow-icon" src="icons/arrow-icon.png">
+                        </div>
+                        <h5 class="project-subtitle">Videogame</h5>
+                        <h6>Developed by: Juan Carlos Martinez - Dec 10, 2020</h6>
                     </div>
                 </div></a>
             </div>
@@ -239,11 +240,11 @@
             <div class="experiences">
 
                 <div class="experience">
-                    <a href="experience.html#experience-2"><div class="experience-title-box">
+                    <a href="experience.html#experience-3"><div class="experience-title-box">
                         <h4>Software Engineer Intern - Grupo Salinas</h4>
                         <h4>July 2024 - August 2024</h4>
                     </div></a>
-                    <a href="experience.html#experience-2"><div class="experience-content">
+                    <a href="experience.html#experience-3"><div class="experience-content">
                         <div class="experience-text">
                             <div class="experience-info-box">
                                 <div class="experience-info">
@@ -262,11 +263,12 @@
                             <h4 class="experience-description">I contributed to the migration of Vue components from a monolithic system to a microservices-based frontend architecture. I also managed mock client data within the database to ensure thorough testing before production deployment and collaborated on backend development in Java.</h4>
                             <div class="experience-skills">
                                 <h6>Vue</h6>
-                                <h6>SQL</h6>
                                 <h6>Java</h6>
-                                <h6>Troubleshooting</h6>
-                                <h6>Team Collaboration</h6>
-                                <h6>Communication</h6>
+                                <h6>SQL</h6>
+                                <h6>Git</h6>
+                                <h6>Code Testing</h6>
+                                <h6>Production Process</h6>
+                                <h6>Professional Organization</h6>
                             </div>
                         </div>
                         <img class="experience-logo" src="images/experience-3.png">
@@ -331,9 +333,10 @@
                             <h4 class="experience-description">I contributed to proposals for new financial products, assisted in renewing the bank's mobile application, and generated data reports, gaining insights into the bank's operations and macroeconomic impact.</h4>
                             <div class="experience-skills">
                                 <h6>HTML</h6>
+                                <h6>CSS</h6>
                                 <h6>JavaScript</h6>
-                                <h6>Data Analysis</h6>
                                 <h6>Database Management</h6>
+                                <h6>Data Analysis</h6>
                                 <h6>Critical Thinking</h6>
                             </div>
                         </div>
@@ -380,21 +383,22 @@
                 </a>
             </div>
             <h2 class="email-title">Send me an email.</h2>
-            <div class="text-boxes">
+            <form class="text-boxes" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="15b41fe6-ab15-4f8c-b13a-931b132ee8e8">
                 <div class="left-text-boxes">
                     <h4 class="text-boxes-subtitle">Name</h4>
-                    <input class="text-box-small" type="text"></input>
+                    <input class="text-box-small" type="text" name="name"></input>
                     <h4 class="text-boxes-subtitle">Email</h4>
-                    <input class="text-box-small" type="text"></input>
+                    <input class="text-box-small" type="email" name="email"></input>
                 </div>
                 <div class="right-text-boxes">
                     <h4 class="text-boxes-subtitle">Message</h4>
-                    <input class="text-box-big" type="text"></input>
+                    <textarea class="text-box-big" name="message" required></textarea>
                     <div class="button-box">
-                        <button class="email-button">Send email</button>
+                        <button class="email-button" type="submit">Send email</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </section>
 
         <footer class="footer">

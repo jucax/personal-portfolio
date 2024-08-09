@@ -297,7 +297,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     max-width: 1000px;
     margin-top: 60px;
     margin-left: 20px;
@@ -461,15 +461,18 @@
     margin-top: 20px;
     margin-bottom: 20px;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 30px;
     background-color: rgb(72, 72, 72);
     border: 2px solid rgb(255, 255, 255);
-    padding-left: 10px;
-    padding-right: 10px;
-    
+    padding: 10px;
 }
 .text-box-big {
     height: 150px;
+}
+.text-box-small:focus,
+.text-box-big:focus {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
 }
 .button-box {
     display: flex;
