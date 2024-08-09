@@ -78,7 +78,7 @@
     align-items: top;
     justify-content: center;
     gap: 40px;
-    max-width: calc(100% - 160px);
+    max-width: 1000px;
     width: 100%;
 }
 .left-text-boxes,
@@ -156,6 +156,7 @@
     .text-boxes {
         flex-direction: column;
         gap: 0px;
+        max-width: calc(100% - 160px);
     }
 }
 

@@ -91,7 +91,7 @@
     padding: 10px;
     width: 380px;
     border-radius: 14px;
-    transition: box-shadow 0.75s ease-in-out;
+    transition: box-shadow 0.75s ease-in-out; 
 }
 .project-picture {
     height: 200px;
@@ -123,7 +123,7 @@
     margin-bottom: 30px;
 }
 .project:hover {
-    box-shadow: 0 0 15px rgba(148, 200, 234, 0.5);
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
 .project:hover .arrow-icon {
@@ -318,6 +318,11 @@
     padding: 14px;
     background-color: rgb(198, 198, 198);
     border-radius: 10px;
+    transition: box-shadow 0.75s ease-in-out; 
+}
+.experience-title-box:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 .experience-title-box h4 {
     color: rgb(56, 56, 56);
@@ -331,6 +336,11 @@
     background-color: rgb(72, 72, 72);
     border-radius: 10px;
     gap: 40px;
+    transition: box-shadow 0.75s ease-in-out; 
+}
+.experience-content:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 .experience-text {
     display: flex;
@@ -377,6 +387,7 @@
 }
 .experience-logo {
     width: 170px;
+    border-radius: 16px;
 }
 
 /* Social media section */
@@ -433,7 +444,7 @@
     align-items: top;
     justify-content: center;
     gap: 40px;
-    max-width: calc(100% - 160px);
+    max-width: 1000px;
     width: 100%;
 }
 .left-text-boxes,
@@ -604,6 +615,11 @@
     .social-media {
         border: 1px solid rgb(72, 72, 72);
         border-radius: 16px;
+    }
+
+    /* Email section scale */
+    .text-boxes {
+        max-width: calc(100% - 160px);
     }
 }
 
