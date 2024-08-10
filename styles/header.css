@@ -57,7 +57,7 @@
     width: 36px;
 }
 
-.middle-section p:hover {
+.middle-section h4:hover {
     background-color: rgba(148, 200, 234, 0.5);
     cursor: pointer;
 }
@@ -105,9 +105,11 @@
     padding: 10px 20px;
     width: 100%;
     text-align: center;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in;
 }
-.mobile-nav a:hover {
-    background-color: rgb(72, 72, 72);
+.mobile-nav h4:hover {
+    background-color: rgba(148, 200, 234, 0.5);
     cursor: pointer;
 }
 .nav-button-section {
