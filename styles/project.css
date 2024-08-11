@@ -101,6 +101,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-wrap: nowrap;
     gap: 16px;
     width: 240px;
     padding: 24px 40px 24px 40px;
