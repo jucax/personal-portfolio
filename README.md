@@ -1,2 +1,2 @@
-This repository contains the source code and assets for my static HTML & CSS personal portfolio website. 
+Source code and assets for my static HTML & CSS personal portfolio website. 
 The website showcases my projects, skills, and experiences, providing a comprehensive overview of my professional journey and accomplishments.
