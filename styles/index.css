@@ -51,6 +51,7 @@
 .main-home-illustration {
     width: 500px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 /* Other sections */
