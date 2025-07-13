@@ -15,10 +15,20 @@
 .main-home .text {
     width: 500px;
 }
+.main-home .text h1 {
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: bold;
+}
 .main-home .subtitle {
     line-height: 36px;
     margin-top: 26px;
     text-wrap: nowrap;
+}
+.main-home .subtitle h3 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 500;
 }
 .connect-button,
 .view-button,
@@ -241,31 +251,28 @@
     font-weight: bold;
     text-align: center;
     text-wrap: nowrap;
+    width: 120px;
+    flex-shrink: 0;
 }
 .programming-skills,
 .pc-mac-skills,
 .video-skills,
-.design-skills {
+.design-skills,
+.languages-skills,
+.frameworks-skills,
+.libraries-skills,
+.tools-skills {
     display: flex;
-    flex: row;
+    flex-direction: row;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-start;
     gap: 16px;
-}
-.pc-mac-skills {
-    position: relative;
-    left: 50px;
-}
-.video-skills {
-    position: relative;
-    left: 90px;
-}
-.design-skills {
-    position: relative;
-    left: 40px;
+    flex-wrap: wrap;
 }
 .programming-skills h6,
-.video-skills h6 {
+.video-skills h6,
+.languages-skills h6,
+.libraries-skills h6 {
     color: rgb(255, 255, 255);
     padding: 14px 18px 14px 18px;
     background-color: rgb(56, 56, 56);
@@ -274,6 +281,8 @@
 }
 .pc-mac-skills h6,
 .design-skills h6,
+.frameworks-skills h6,
+.tools-skills h6,
 .languaje {
     color: rgb(56, 56, 56);
     padding: 14px 18px 14px 18px;
@@ -488,6 +497,14 @@
     .main-home {
         gap: 100px;
     }
+    .main-home .text h1 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+    .main-home .subtitle h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
     .main-home-illustration {
         width: 450px;
         border-radius: 10px;
@@ -548,6 +565,14 @@
     }
     .main-home .text {
         text-align: center;
+    }
+    .main-home .text h1 {
+        font-size: 52px;
+        line-height: 60px;
+    }
+    .main-home .subtitle h3 {
+        font-size: 22px;
+        line-height: 30px;
     }
     .work .text,
     .about-me .text,
@@ -653,15 +678,14 @@
     .programming-skills,
     .pc-mac-skills,
     .video-skills,
-    .design-skills {
+    .design-skills,
+    .languages-skills,
+    .frameworks-skills,
+    .libraries-skills,
+    .tools-skills {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-    }
-    .pc-mac-skills,
-    .video-skills,
-    .design-skills {
-        left: 00px;
     }
     .languajes-content {
         flex-direction: column;
@@ -684,6 +708,14 @@
     /* Main home section scale */
     .main-home .text {
         width: 280px;
+    }
+    .main-home .text h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .main-home .subtitle h3 {
+        font-size: 18px;
+        line-height: 26px;
     }
     .work .text,
     .about-me .text,
